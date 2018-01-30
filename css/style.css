@@ -30,7 +30,7 @@ header > a {
   margin-top: 2%;
 }
 header > a img {
-    max-width: 100%;
+  max-width: 100%;
 }
 /*clic-icon-menu*/
 .icon_container {
@@ -69,10 +69,11 @@ header > a img {
   display: -ms-flexbox;
   display: flex;
 }
-#fixedBar > ul li:first-of-type {
+#fixedBar > ul li:first-of-type{
   font-size: 2em;
   color: #ffffff;
   font-family: 'Nunito', sans-serif;
+    max-width: 100%;
 }
 #fixedBar > ul li {
   margin-left: 25px;
@@ -80,11 +81,6 @@ header > a img {
 #fixedBar > ul li > a img {
   max-width: 100%;
 }
-.container_consolidation{
-    height: 100vh;
-}
-
-/**/
 #type_writer {
   height: 100vh;
   -webkit-box-pack: center;
@@ -101,16 +97,10 @@ header > a img {
   -ms-flex-align: center;
   align-items: center;
 }
-/* min-width: 650px Programing*/
-.content{
-    min-width: 638px;
+.content {
+  min-width: 638px;
 }
-/* min-width: 650px Programing*/
-.mouse_pad{
-    position: absolute;
-    margin-top: 22%
-}
-container_consolidation{
-    height: 100vh;
-    width: 100%;
+.mouse_pad {
+  position: absolute;
+  margin-top: 22%;
 }

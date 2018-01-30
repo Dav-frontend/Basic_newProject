@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    
 }
 
 li{
@@ -14,6 +13,7 @@ li{
 @st_font-family:'Nunito', sans-serif;
 @border-radius:10px;
 
+
 video[loop]{
     min-width: 100%;
     min-height: 100%;
@@ -23,28 +23,31 @@ video[loop]{
     bottom: 0;
     right: 0;
     z-index: -1999;
-   : 
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 header>a{
     margin-left: 2%;
     margin-top: 2%;
+    
     img{
-         width: 113px;
-    height: 43px
+     max-width: 100%;
     }
 }
 
 /*clic-icon-menu*/
-
 .icon_container{
     cursor: pointer;
 }
+
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 4px;
@@ -87,5 +90,26 @@ header>a{
         max-width: 100%;
     }
 }
-
-
+#type_writer {
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.content{
+    min-width: 638px;
+}
+.mouse_pad{
+    position: absolute;
+    margin-top: 22%
+}

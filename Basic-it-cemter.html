@@ -15,7 +15,11 @@
            <ul>
                <li>+374 11 65 99 88</li>
                <li><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
-               <li><a href=""><img src="img/logo/menu.png" alt=""></a></li>
+               <li onclick="myFunction(this)" class="icon_container">
+                   <span class="bar1"></span>
+                   <span class="bar2"></span>
+                   <span class="bar3"></span>
+               </li>
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
        </nav>
@@ -27,16 +31,17 @@
         <source src="video/Phatman%20WebDesign%20Video%20Background.mp4">
    </video>                     <!--  Site Background-Video---^ -->
    
-       <section id="type_writer">
-           <article class="we-teach">
-           <span>we-teach</span>
-           <span>Python Programing text</span>
-           </article>
-           
-           <article id="scrollMouse">
-              <a href=""><img src="img/logo/mouse.png" alt=""></a>
-           </article>
-       </section>
-       
+ 
+       <section class="container_consolidation"></section>
+       <section class="container_consolidation"></section>
+       <section class="container_consolidation"></section>
+       <section class="container_consolidation"></section>
+       <section class="container_consolidation"></section>
+       <section class="container_consolidation"></section>
+    <script>
+    function myFunction(x) {
+    x.classList.toggle("change");   
+    }
+    </script>
 </body>
 </html>

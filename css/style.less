@@ -12,6 +12,7 @@ li{
 @st_fontColor_red1:#ff0000;
 @st_button_BgColor_red1:#cd0306;
 @st_font-family:'Nunito', sans-serif;
+@border-radius:10px;
 
 video[loop]{
     min-width: 100%;
@@ -22,6 +23,7 @@ video[loop]{
     bottom: 0;
     right: 0;
     z-index: -1999;
+   : 
 }
 header{
     display: flex;
@@ -37,6 +39,36 @@ header>a{
     height: 43px
     }
 }
+
+/*clic-icon-menu*/
+
+.icon_container{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display:block;
+    background-color: @st_fontColor_white;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/*clic-icon-menu--^*/
+
+
 #fixedBar{
     margin-right: 2%;
     margin-top: 1%
@@ -44,7 +76,7 @@ header>a{
 #fixedBar>ul{
     display: flex;
     li:first-of-type{
-        font-size: 25pt;
+        font-size: 2em;
         color: @st_fontColor_white;
         font-family: @st_font-family
     }
@@ -55,10 +87,6 @@ header>a{
         max-width: 100%;
     }
 }
-/**/
-
-#type_writer{
-    height: 100vh;
-    justify-content: center;
-    display: flex;
+.container_consolidation{
+    
 }

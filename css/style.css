@@ -65,6 +65,8 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -147,6 +149,8 @@ header > a img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .overflow-y-bar {
@@ -167,7 +171,7 @@ header > a img {
   color: #eeeeee;
 }
 .overflow-y-bar > ul > li {
-  margin-top: 35px;
+  margin-top: 30px;
   font-size: 1.25vw;
   font-family: 'Nunito', sans-serif;
 }
@@ -182,7 +186,7 @@ header > a img {
   border-radius: 15px;
   border: 2px dotted #eeeeee;
   margin-left: 7%;
-  min-width: 478px;
+  min-width: 30vw;
   min-height: 420px;
 }
 #dottedCubic > legend {
@@ -192,6 +196,7 @@ header > a img {
 }
 #dottedCubic > legend > img {
   max-width: 100%;
+    
 }
 #dottedCubic > article {
   text-align: center;
@@ -212,7 +217,7 @@ header > a img {
   width: 310px;
   margin: 26px auto;
   font-family: 'Nunito', sans-serif;
-  line-height: 1.15vw;
+  line-height: 22px;
   word-spacing: 4.1px;
   color: #ffffff;
 }
@@ -226,6 +231,6 @@ header > a img {
   font-family: 'Nunito', sans-serif;
   border-radius: 10px;
   font-size: 1.3em;
-  margin-top: 2%;
+  margin-top: -1%;
 }
 /*187 49*/

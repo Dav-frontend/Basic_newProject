@@ -65,8 +65,6 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -149,8 +147,6 @@ header > a img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .overflow-y-bar {
@@ -180,13 +176,13 @@ header > a img {
   color: #eeeeee;
 }
 #dottedCubic {
-  height: 82.4%;
-  width: 47%;
-  margin-top: -9%;
+  height: 88%;
+  width: 46%;
+  margin-top: -6.5%;
   border-radius: 15px;
   border: 2px dotted #eeeeee;
   margin-left: 7%;
-  min-width: 30vw;
+  min-width: 478px;
   min-height: 420px;
 }
 #dottedCubic > legend {
@@ -196,7 +192,6 @@ header > a img {
 }
 #dottedCubic > legend > img {
   max-width: 100%;
-    
 }
 #dottedCubic > article {
   text-align: center;
@@ -205,6 +200,7 @@ header > a img {
   font-size: 2.2vw;
   font-family: sans-serif;
   color: #ffffff;
+  font-weight: 100;
 }
 #dottedCubic > article span {
   width: 202px;

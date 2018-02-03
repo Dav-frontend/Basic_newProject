@@ -30,10 +30,11 @@
   list-style: none;
   color: #ee0102;
   -webkit-animation-name: change;
-  -webkit-animation-duration: 15s;
+  -webkit-animation-duration: 23s;
   -webkit-animation-iteration-count: infinite;
   animation-name: change;
-  animation-duration: 15s;
+  -webkit-animation-duration: 23s;
+  animation-duration: 23s;
   animation-iteration-count: infinite;
 }
 .content__container__list__item {

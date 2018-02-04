@@ -214,15 +214,27 @@ header>a{
             display: flex;
             flex-direction: row;
             margin-bottom: 30px;
-            section:nth-child(1){
+            >section:nth-child(1){
                 width: 31.3%;
                 background-color: #343a41;
                 border-radius: 10px 0 0 10px;
                 text-align: center;
-                img{
-                   max-width: 100%;
-                   margin-top: 10%; 
+                >article:nth-child(1){
+                    width: 100%;
+                    height: 60%;
+                    >img{
+                      width: 19%;
+                      margin-top: 10%;
+                    }
                 }
+                >article:nth-child(2){
+                  width: 100%;
+                  height: 40%;
+        
+                  >img{
+                     width: 19%;
+                  }  
+                }   
             }
             section:nth-child(2){
                 width: 68.8%;
@@ -230,6 +242,7 @@ header>a{
                 border-radius: 0 10px 10px 0;
                 article{
                     width: 64%;
+                    height: 60%;
                     margin-left: 4.9%;
                     h3{
                       font-size: 2vw;
@@ -250,7 +263,8 @@ header>a{
                     height: 14.8%;
                     border: 0;
                     font-size: 0.8vw;
-                    margin-left: 4.9% ;
+                    margin-left: 4.9%;
+                    margin-top:10px;
                  } 
             }
         }

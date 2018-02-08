@@ -65,6 +65,8 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -147,6 +149,8 @@ header > a img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .overflow-y-bar {
@@ -176,8 +180,14 @@ header > a img {
   color: #eeeeee;
 }
 #OurCurses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #eeeeee;
   height: 100vh;
@@ -194,7 +204,12 @@ header > a img {
 #OurCurses > section > article {
   width: 100%;
   height: 31.8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 30px;
 }
@@ -308,8 +323,14 @@ header > a img {
 }
 /*needHelp*/
 #needHelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #ffffff;
@@ -394,3 +415,6 @@ header > a img {
   bottom: 15%;
   width: 5%;
 }
+
+
+

@@ -7,7 +7,15 @@ li {
 a {
   text-decoration: none;
 }
+/*|*/
+/*|*/
+/*|*/
 /*w-2000px h-950px*/
+/*|*/
+.child_section {
+  width: 57%;
+  height: 89.3%;
+}
 video[loop] {
   min-width: 100%;
   min-height: 100%;
@@ -110,64 +118,60 @@ header > a img {
   background-color: #eeeeee;
   height: 100vh;
 }
-#OurCurses > section {
-  width: 57%;
-  height: 89.3%;
-}
-#OurCurses > section > h2 {
+#OurCurses > h2 {
   color: #24282d;
   text-align: center;
   font-size: 2.5vw;
 }
-#OurCurses > section > article {
+#OurCurses > article {
   width: 100%;
   height: 31.8%;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
 }
-#OurCurses > section > article > section:nth-child(1) {
+#OurCurses > article > section:nth-child(1) {
   width: 31.3%;
   background-color: #343a41;
   border-radius: 10px 0 0 10px;
   text-align: center;
 }
-#OurCurses > section > article > section:nth-child(1) > article:nth-child(1) {
+#OurCurses > article > section:nth-child(1) > article:nth-child(1) {
   width: 100%;
   height: 60%;
 }
-#OurCurses > section > article > section:nth-child(1) > article:nth-child(1) > img {
+#OurCurses > article > section:nth-child(1) > article:nth-child(1) > img {
   width: 19%;
   margin-top: 10%;
 }
-#OurCurses > section > article > section:nth-child(1) > article:nth-child(2) {
+#OurCurses > article > section:nth-child(1) > article:nth-child(2) {
   width: 100%;
   height: 40%;
 }
-#OurCurses > section > article > section:nth-child(1) > article:nth-child(2) > img {
+#OurCurses > article > section:nth-child(1) > article:nth-child(2) > img {
   width: 19%;
 }
-#OurCurses > section > article section:nth-child(2) {
+#OurCurses > article section:nth-child(2) {
   width: 68.8%;
   background-color: #24282d;
   border-radius: 0 10px 10px 0;
 }
-#OurCurses > section > article section:nth-child(2) article {
+#OurCurses > article section:nth-child(2) article {
   width: 64%;
   height: 60%;
   margin-left: 4.9%;
 }
-#OurCurses > section > article section:nth-child(2) article h3 {
+#OurCurses > article section:nth-child(2) article h3 {
   font-size: 2vw;
   margin: 5% 0;
   color: #ffffff;
 }
-#OurCurses > section > article section:nth-child(2) article p {
+#OurCurses > article section:nth-child(2) article p {
   font-size: 1vw;
   margin: 10px 0;
   color: #ffffff;
 }
-#OurCurses > section > article section:nth-child(2) button {
+#OurCurses > article section:nth-child(2) button {
   background-color: #cd0306;
   color: #ffffff;
   border-radius: 10px;
@@ -185,8 +189,6 @@ header > a img {
   align-items: center;
 }
 #implementedProjects > section {
-  width: 57%;
-  height: 89.3%;
   /*W-H Of Child Elemet*/
   display: flex;
   justify-content: space-between;
@@ -309,8 +311,6 @@ header > a img {
   background-color: #eeeeee;
 }
 #needHelp section {
-  width: 57%;
-  height: 89.3%;
   background-image: url(../img/programing/logoBasick.png);
   background-repeat: no-repeat;
   background-position: center;

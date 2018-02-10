@@ -18,13 +18,16 @@ a{
 @border-radius:10px;
 
 //--------------------------------
-@hidth_Child_section: 57%;      //|
-@height_Child_section: 89.3%;   //|
-                                //|
-        /*w-2000px h-950px*/    //|                             
+@hidth_Child_section: 57%;      /*|*/
+@height_Child_section: 89.3%;   /*|*/
+                                /*|*/
+      /*w-2000px h-950px*/      /*|*/                             
 //--------------------------------
     
-
+.child_section{
+    width: 57%;
+    height: 89.3%;
+}
 video[loop]{
     min-width: 100%;
     min-height: 100%;
@@ -131,9 +134,6 @@ header>a{
     align-items: center;
     background-color:@st_bgColor_white;
     height: 100vh;
-    >section{
-        width:@hidth_Child_section;
-        height:@height_Child_section;
         >h2{
             color: @st_fontColor_black;
             text-align: center;
@@ -200,7 +200,7 @@ header>a{
             }
         }
     }
-}
+
 
 
 
@@ -213,9 +213,7 @@ header>a{
     justify-content: center; /*<---Parent Element*/
     align-items: center;
 
-    >section{
-    width:@hidth_Child_section;
-    height:@height_Child_section;   /*W-H Of Child Elemet*/
+    >section{   /*W-H Of Child Elemet*/
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -358,8 +356,6 @@ header>a{
     position: relative;
     background-color:@st_bgColor_white;
     section{
-        width:@hidth_Child_section;
-        height:@height_Child_section;
         background-image: url(../img/programing/logoBasick.png);
         background-repeat: no-repeat;
         background-position: center;

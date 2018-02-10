@@ -118,60 +118,60 @@ header > a img {
   background-color: #eeeeee;
   height: 100vh;
 }
-#OurCurses > h2 {
+#OurCurses > section > h2 {
   color: #24282d;
   text-align: center;
   font-size: 2.5vw;
 }
-#OurCurses > article {
+#OurCurses > section > article {
   width: 100%;
   height: 31.8%;
   display: flex;
   flex-direction: row;
   margin-bottom: 30px;
 }
-#OurCurses > article > section:nth-child(1) {
+#OurCurses > section > article > section:nth-child(1) {
   width: 31.3%;
   background-color: #343a41;
   border-radius: 10px 0 0 10px;
   text-align: center;
 }
-#OurCurses > article > section:nth-child(1) > article:nth-child(1) {
+#OurCurses > section > article > section:nth-child(1) > article:nth-child(1) {
   width: 100%;
   height: 60%;
 }
-#OurCurses > article > section:nth-child(1) > article:nth-child(1) > img {
+#OurCurses > section > article > section:nth-child(1) > article:nth-child(1) > img {
   width: 19%;
   margin-top: 10%;
 }
-#OurCurses > article > section:nth-child(1) > article:nth-child(2) {
+#OurCurses > section > article > section:nth-child(1) > article:nth-child(2) {
   width: 100%;
   height: 40%;
 }
-#OurCurses > article > section:nth-child(1) > article:nth-child(2) > img {
+#OurCurses > section > article > section:nth-child(1) > article:nth-child(2) > img {
   width: 19%;
 }
-#OurCurses > article section:nth-child(2) {
+#OurCurses > section > article section:nth-child(2) {
   width: 68.8%;
   background-color: #24282d;
   border-radius: 0 10px 10px 0;
 }
-#OurCurses > article section:nth-child(2) article {
+#OurCurses > section > article section:nth-child(2) article {
   width: 64%;
   height: 60%;
   margin-left: 4.9%;
 }
-#OurCurses > article section:nth-child(2) article h3 {
+#OurCurses > section > article section:nth-child(2) article h3 {
   font-size: 2vw;
   margin: 5% 0;
   color: #ffffff;
 }
-#OurCurses > article section:nth-child(2) article p {
+#OurCurses > section > article section:nth-child(2) article p {
   font-size: 1vw;
   margin: 10px 0;
   color: #ffffff;
 }
-#OurCurses > article section:nth-child(2) button {
+#OurCurses > section > article section:nth-child(2) button {
   background-color: #cd0306;
   color: #ffffff;
   border-radius: 10px;

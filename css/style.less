@@ -537,8 +537,6 @@ header>a{
     justify-content: center;
     align-items: center;
     >section{
-        outline: 1px solid @font-color_red;
-        
         >h2{
             text-align: center;
             font-size: 2vw;
@@ -571,23 +569,63 @@ header>a{
             color: @font-color_white;
             font-family: @font-family;
             font-size: 1.2vw;
-        }
-        span::before{
-            content: "";
-            position: absolute;
-            width:10%;
-            height: 2px;
-            background-color: @font-color_white;
-            margin-top: -0.3%
+            border-top: 2px solid @font-color_white;
+            padding-top: 2%;
         }
     }
 }
 
 //customer registrar
 
-#userContact{
-    text-align: center;
-    input{
+/*    input area    */
+#userContact {
+    display: flex;
+    justify-content: center;
+    flex-flow:column;
+    align-items: center;
+    >input{
+        width: 34%;
+        height:2.4vw;
+        font-size: 1.1vw;
+        font-family: @font-family;
+        border: none;
+        outline: none;
+        background-color: rgba(240, 248, 255, 0);
+        color: dimgrey/*Email+text+submit input*/
+    }
+    input:last-child{
+        background-color: @button-Bg-Color;
+        border-radius: @border-radius;
+        font-size: 1vw;
+        font-family: @font-family;
+        color: @font-color_white;
+        margin-top: 1%;//input_submit
+        
+}
+    >span{
         display: block;
+        height: 1px;
+        background-color: floralwhite;
+        width:34.5%;
+        //border_bottom for input
+    }
+}  
+
+.be_informed{
+    text-align: center;
+    >h3{
+        font-family: @font-family;
+        font-size: 1.2vw;
+        color: @font-color_white;
+        font-weight: 100;
+    }
+    >p{
+        font-size: 1vw;
+        color: #a8afb7;
+        font-family: @font-family;
+    }
+    >button{
+       width: 190px;
     }
 }
+

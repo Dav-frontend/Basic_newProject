@@ -7,6 +7,17 @@ li {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+p,
+span,
+button {
+  font-family: 'Nunito', sans-serif;
+}
 /*|*/
 /*|*/
 /*|*/
@@ -77,8 +88,6 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -98,14 +107,8 @@ header > a img {
 }
 #type_writer {
   height: 100vh;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .content {
@@ -127,32 +130,26 @@ header > a img {
 /*full_style section*/
 /*full_style section*/
 #OurCurses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: #eeeeee;
   height: 100vh;
 }
+#OurCurses > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #OurCurses > section > h2 {
   color: #24282d;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 #OurCurses > section > article {
   width: 100%;
-  height: 31.8%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 36%;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 30px;
 }
@@ -188,12 +185,12 @@ header > a img {
   margin-left: 4.9%;
 }
 #OurCurses > section > article section:nth-child(2) article h3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 5% 0;
   color: #ffffff;
 }
 #OurCurses > section > article section:nth-child(2) article p {
-  font-size: 1vw;
+  font-size: 0.9vw;
   margin: 10px 0;
   color: #ffffff;
 }
@@ -202,34 +199,22 @@ header > a img {
   color: #ffffff;
   border-radius: 10px;
   width: 18.5%;
-  height: 14.8%;
+  height: 16.8%;
   border: 0;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
   margin-left: 4.9%;
-  margin-top: 10px;
+  margin-top: 1%;
 }
 #implementedProjects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   /*<---Parent Element*/
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #implementedProjects > section {
   /*W-H Of Child Elemet*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 /*Child section*/
@@ -342,14 +327,8 @@ header > a img {
   }
 }
 #needHelp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #eeeeee;
@@ -509,14 +488,8 @@ header > a img {
   }
 }
 #subsCribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #subsCribe > section > h2 {
@@ -533,14 +506,8 @@ header > a img {
   margin-top: 8%;
   background-image: url(../img/aphorisms/Albert%20Eynshten.png);
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
 }
@@ -561,18 +528,9 @@ header > a img {
 }
 /*    input area    */
 #userContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #userContact > input {
@@ -614,10 +572,114 @@ header > a img {
   font-family: 'Nunito', sans-serif;
 }
 .be_informed > button {
-    width: 17%;
-    height: 40px;
-    font-size: 0.8vw
+  width: 190px;
 }
-.be_informed > button::before{
-   
+#partner {
+  background-color: #ffffff;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#partner section {
+  width: 57%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#partner section h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2vw;
+}
+#partner section > article {
+  height: 10%;
+  margin-top: 2%;
+}
+#partner section > article > article {
+  height: 100%;
+}
+#partner section > article > article > a > img {
+  height: 100%;
+  width: 100%;
+}
+#partner section > .partners1 {
+  display: flex;
+  justify-content: space-between;
+}
+#partner section > .partners1 article {
+  width: 15%;
+}
+#partner section > .partners2 {
+  display: flex;
+  justify-content: space-around;
+}
+#partner section > .partners2 article:nth-of-type(1) {
+  width: 5.9%;
+}
+#partner section > .partners2 article:nth-of-type(2) {
+  width: 20%;
+}
+#partner section > .partners2 article:nth-of-type(3) {
+  width: 18%;
+}
+#partner section > .partners2 article:nth-of-type(4) {
+  width: 8.8%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #24282d;
+  height: 50vh;
+  color: #ffffff;
+}
+footer li {
+  font-size: 1.5vw;
+}
+footer h3 {
+  font-size: 1.3vw;
+  margin: 6% 0;
+}
+footer > section:nth-of-type(1) {
+  width: 57%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer > section:nth-of-type(1) nav {
+  margin-right: 11.6%;
+  height: 60%;
+}
+footer > section:nth-of-type(1) nav ul {
+  padding: 0;
+}
+footer > section:nth-of-type(1) nav ul a {
+  color: #ffffff;
+}
+footer > section:nth-of-type(1) form {
+  width: 45%;
+  height: 60%;
+  position: relative;
+}
+footer > section:nth-of-type(1) form input {
+  background: none;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  color: #ffffff;
+  padding: 0 0 10px 10px;
+}
+footer > section:nth-of-type(1) form button {
+  background-color: #cd0306;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  height: 25%;
+  margin-top: 4%;
+  width: 40%;
+  font-size: 1vw;
 }

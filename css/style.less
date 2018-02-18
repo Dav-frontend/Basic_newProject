@@ -8,7 +8,9 @@ li{
 a{
     text-decoration: none
 }
-
+h1 ,h2 ,h3,h4,a,li,p,span,button {
+  font-family: 'Nunito', sans-serif;
+}
 @bg-color_white: #eeeeee;
 @font-color_white:#ffffff;
 @font-color_black:#24282d;
@@ -143,14 +145,17 @@ header>a{
     background-color:@bg-color_white;
     height: 100vh;
     >section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         >h2{
             color: @font-color_black;
             text-align: center;
-            font-size: 2.5vw;
+            font-size: 2vw;
         }
         >article{
             width: 100%;
-            height: 31.8%;
+            height: 36%;
             display: flex;
             flex-direction: row;
             margin-bottom: 30px;
@@ -185,31 +190,32 @@ header>a{
                     height: 60%;
                     margin-left: 4.9%;
                     h3{
-                      font-size: 2vw;
+                      font-size: 1.5vw;
                       margin: 5% 0;
-                      color: @font-color_white;
+                      color: #ffffff;  
                     }
                     p{
-                      font-size: 1vw;
+                      font-size: 0.9vw;
                       margin: 10px 0;
-                      color: @font-color_white;     
+                      color: #ffffff;     
                     }
                 }
                  button{
-                    background-color:@button-Bg-Color;
-                    color: @font-color_white;
-                    border-radius: 10px;
+                    background-color: @button-Bg-Color;
+                    color:#ffffff;
+                    border-radius: @border-radius;
                     width: 18.5%;
-                    height: 14.8%;
+                    height: 16.8%;
                     border: 0;
-                    font-size: 0.8vw;
+                    font-size: 0.9vw;
                     margin-left: 4.9%;
-                    margin-top:10px;
+                    margin-top:1%;
                  } 
             }
         }
     }
 }
+
 
 
 
@@ -629,3 +635,119 @@ header>a{
     }
 }
 
+#partner{
+  background-color: #ffffff;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  section{
+    width: @hidth_Child_section;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size:2vw 
+   }
+    >article{
+        height:10%;
+        margin-top: 2%;  
+      >article {
+        height: 100%;
+        >a > img{
+            height: 100%;
+            width: 100%;
+        }
+      }
+    }
+    >.partners1{
+         display: flex;
+         justify-content: space-between;
+        article{
+          width: 15%;
+        }
+    }
+    >.partners2{
+      display: flex;
+      justify-content: space-around;
+      article:nth-of-type(1){
+        width: 5.9%;
+      }
+      article:nth-of-type(2){
+        width: 20%;
+      }
+      article:nth-of-type(3){
+        width: 18%;
+      }
+      article:nth-of-type(4){
+        width: 8.8%;
+      }
+    }
+  }
+  
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #24282d;
+  height:50vh;
+  color:#ffffff;
+  li{
+    font-size: 1.5vw;
+  }
+  h3{
+    font-size: 1.3vw;
+    margin:6% 0;
+  }
+  >section:nth-of-type(1){
+    width: @hidth_Child_section;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    nav{
+      margin-right:11.6%;
+      height: 60%;
+      ul{
+        padding: 0;
+        a{
+          color:#ffffff;
+        }
+      }
+    }
+    form{
+      width: 45%;
+      height: 60%;
+      position: relative;
+
+      input{
+        background: none;
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid #ffffff;
+        outline: none;
+        color: #ffffff;
+        padding: 0 0 10px 10px;
+      }
+      button{
+          background-color: @button-Bg-Color;
+          color:#ffffff;
+          border-radius: @border-radius;
+          border: 0;
+          height: 25%;
+          margin-top: 4%;
+          width: 40%;
+          font-size: 1vw;
+      }
+    }
+  }
+  >section:nth-of-type(2){
+
+  }
+}

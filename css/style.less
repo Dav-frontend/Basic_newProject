@@ -144,6 +144,7 @@ header>a{
     align-items: center;
     background-color:@bg-color_white;
     height: 100vh;
+    min-height: 650px;
     >section{
         display: flex;
         flex-direction: column;
@@ -227,6 +228,7 @@ header>a{
     display: flex;
     justify-content: center; /*<---Parent Element*/
     align-items: center;
+    min-height: 650px;
 
     >section{   /*W-H Of Child Elemet*/
     display: flex;
@@ -370,6 +372,7 @@ header>a{
     align-items: center;
     position: relative;
     background-color:@bg-color_white;
+    min-height: 650px;
     section{
         background-image: url(../img/programing/logoBasick.png);
         background-repeat: no-repeat;
@@ -416,9 +419,6 @@ header>a{
     cursor: pointer
     
 }
-
-
-
 @media screen and (max-width: 1024px){
     #needHelp section {
       width: 74.4%;
@@ -437,6 +437,7 @@ header>a{
         font-size: 1.7vw
     }
 }
+/**/
 
 
 
@@ -542,6 +543,7 @@ header>a{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 650px;
     >section{
         >h2{
             text-align: center;
@@ -556,7 +558,7 @@ header>a{
 .wise_words{
     width: 100%;
     height: 32.5%;
-    margin-top:8%;
+    margin-top:5%;
     background-image: url(../img/aphorisms/Albert%20Eynshten.png);
     background-size: cover;
     display: flex;
@@ -597,7 +599,7 @@ header>a{
         border: none;
         outline: none;
         background-color: rgba(240, 248, 255, 0);
-        color: dimgrey/*Email+text+submit input*/
+        color:@font-color_white/*Email+text+submit input*/
     }
     input:last-child{
         background-color: @button-Bg-Color;
@@ -605,7 +607,8 @@ header>a{
         font-size: 1vw;
         font-family: @font-family;
         color: @font-color_white;
-        margin-top: 1%;//input_submit
+        margin-top: 1%;
+        cursor: pointer//input_submit
         
 }
     >span{
@@ -619,6 +622,7 @@ header>a{
 
 .be_informed{
     text-align: center;
+    margin-top: 5%;
     >h3{
         font-family: @font-family;
         font-size: 1.2vw;
@@ -630,11 +634,83 @@ header>a{
         color: #a8afb7;
         font-family: @font-family;
     }
+    //facebook buuton style
     >button{
-       width: 190px;
+          display: inline-block;
+          height: 43px;
+          line-height: 42px;
+          padding-left: 48px;
+          position: relative;
+          background-color: #3b5998;
+          color: #ffffff;
+          letter-spacing: 1px;
+          border: none;
+          border-radius: 6px;
+          font-size: 12px;
+          cursor: pointer;
+          margin-top: 1%;
+          -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px  #1f376a;
+        
+        span{
+          position: absolute;
+          left: 0;
+          width: 40px;
+          background-color: #3b5998;
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+          border-right: 1px solid rgba(0, 0, 0, 0.15);
+          font-size: 23px;
+            i{
+                  font-size: 55px;
+            }
+        }
     }
 }
 
+@media screen and (max-width: 1024px) {
+  #subsCribe > section {
+    width: 74.4%;
+    height: 92.8%;
+    
+  }
+  #subsCribe > section > h2 {
+    font-size: 2.3vw;
+  }
+  .wise_words {
+    background-size: cover;
+    background-position: center;
+    margin-top: 5%;
+  }
+  .wise_words > article {
+    margin-left: 10%;
+  }
+  .wise_words > article h2 {
+    font-size: 2.2vw;
+    font-weight: 100;
+  }
+  .wise_words > article span {
+    font-size: 1.4vw;
+  }
+  #userContact > input {
+    height: 44px;
+    width: 25tpx;
+    font-size: 1em;
+  }
+  #userContact input:last-child {
+    font-size: 1.9vw;
+    margin-top: 2%;
+  }
+  .be_informed h3 {
+    font-size: 1.6vw;
+  }
+  .be_informed > p {
+    font-size: 1.4vw;
+  }
+}
+
+
+//-------from media^
 #partner{
   background-color: #ffffff;
   height: 50vh;
@@ -689,7 +765,6 @@ header>a{
   }
   
 }
-
 
 footer {
   display: flex;

@@ -14,14 +14,98 @@
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-/* Styles */
-#OurCurses > section{
-	width: 75%;
+@media only screen and (min-width : 768px) and (max-width : 1024px) {    
+/*section2 STARTUP PROJECTS-- {.overflow-y-bar} + {#dottedCubic}*/
+ #implementedProjects >  section{
+      width: 74.4%;
+      height: 92.8%
+    }
+    .overflow-y-bar{
+       width: 40.7%;
+        height: 39.5%;
+    }
+    .overflow-y-bar > ul > li{
+        font-size: 1.3vw;
+         line-height: 2vw
+    }
+    #dottedCubic{
+       width: 48%;
+        height: 54%;
+        min-height: 200px
+    }
+    #dottedCubic > article > h2{
+        font-size: 2.1vw
+    }
+    #dottedCubic > article > p{
+        font-size: 1.4vw
+    }
+    #dottedCubic > article > button{
+        width: 38%;
+        height: 18%;
+        font-size: 1.5vw
+    }
+    #dottedCubic > legend > article > img{
+       width: 37%;
+  } /*end*/
+    
+    /*section3 ned Help*/
+    #needHelp section {
+      width: 74.4%;
+      height: 92.8%;
+        
+    }
+    #needHelp > section > article > span:last-of-type{
+        font-size: 2.2vw;
+    }
+    #needHelp > section > article > span:first-of-type {
+      font-size: 1.6vw
 }
-#OurCurses > section p{
-	font-size: 1vw;
-}
+    #GetStarted{
+        width: 170px;
+        height: 43px;
+        font-size: 1.7vw
+    }
+   
+    /*section4 subsCribe */
+    #subsCribe > section {
+    width: 74.4%;
+    height: 92.8%;
+    
+  }
+  #subsCribe > section > h2 {
+    font-size: 2.3vw;
+  }
+  .wise_words {
+    background-size: cover;
+    background-position: center;
+    margin-top: 5%;
+  }
+  .wise_words > article {
+    margin-left: 10%;
+  }
+  .wise_words > article h2 {
+    font-size: 2.2vw;
+    font-weight: 100;
+  }
+  .wise_words > article span {
+    font-size: 1.4vw;
+  }
+  #userContact > input {
+    height: 44px;
+    width: 25tpx;
+    font-size: 1em;
+  }
+  #userContact input:last-child {
+    font-size: 1.9vw;
+    margin-top: 2%;
+  }
+  .be_informed h3 {
+    font-size: 1.6vw;
+      margin-top: -2%
+  }
+  .be_informed > p {
+    font-size: 1.4vw;
+  }
 }
 
 /* iPads (landscape) ----------- */

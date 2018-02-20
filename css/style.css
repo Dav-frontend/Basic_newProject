@@ -118,6 +118,7 @@ header > a img {
 .mouse_pad > a {
   position: absolute;
   bottom: 0;
+  margin-left: -10%;
 }
 .mouse_pad > a img {
   width: 100%;
@@ -206,6 +207,44 @@ header > a img {
   font-size: 0.9vw;
   margin-left: 4.9%;
   margin-top: 1%;
+}
+.text {
+  display: flex;
+  margin-left: -85%;
+  margin-top: 20%;
+}
+.text p {
+  color: #ff0000;
+  font-size: 48px;
+  margin-top: 6px;
+}
+.text > ul > li {
+  list-style: none;
+  color: aliceblue;
+  font-size: 40px;
+  margin-top: 0px;
+}
+.word {
+  position: absolute;
+  width: 500px;
+  opacity: 0;
+}
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #implementedProjects {
   display: flex;

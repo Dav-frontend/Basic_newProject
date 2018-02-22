@@ -25,24 +25,37 @@
         height: 39.5%;
     }
     .overflow-y-bar > ul > li{
-        font-size: 1.3vw;
-         line-height: 2vw
+        font-size: 1em;
+         line-height: 3vw
+    }
+    .overflow-y-bar > ul > li:hover{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .overflow-y-bar > ul li a{
+        color: #bfbaba
+    }
+    .overflow-y-bar > ul li a:hover{
+        color:#ffffff
     }
     #dottedCubic{
        width: 48%;
-        height: 54%;
+        height: 54.5%;
         min-height: 200px
     }
     #dottedCubic > article > h2{
-        font-size: 2.1vw
+        font-size: 1.3em;
     }
-    #dottedCubic > article > p{
-        font-size: 1.4vw
+    .text_container > p{
+        width: 85%;
+        font-size: 1em;
+        
     }
     #dottedCubic > article > button{
         width: 38%;
         height: 18%;
-        font-size: 1.5vw
+        font-size: 0.8em
     }
     #dottedCubic > legend > article > img{
        width: 37%;

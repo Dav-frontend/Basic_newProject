@@ -33,8 +33,8 @@
         width: 90%
     }
     /*Text Animation*/
-    
-    
+
+
     /*scroll-list + Raket*/
     .overflow-y-bar{
        width: 40.7%;
@@ -67,7 +67,7 @@
        width: 37%;
   } /*end*/
 
-    
+
     /*section3 ned Help*/
     #needHelp > section > article > span:last-of-type{
         font-size: 2.2vw;
@@ -81,7 +81,7 @@
         font-size: 1.7vw
     }/*end*/
 
-    
+
     /*section4 subsCribe */
   #subsCribe > section > h2 {
     font-size: 2.3vw;
@@ -118,15 +118,15 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){
-    
+
  /*                  */
     .child_section{
      width: 91.1%;
      height: 100vh;
   /*  H-W Child-sectio */
-        
+
     }
-    
+
     /*Text Animation*/
     .text > p{
         font-size: 5.3vw
@@ -165,7 +165,7 @@
   transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
   transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075), -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
 }
-    
+
 /*    Mobile*/
     #implementedProjects >  section{
         -webkit-box-orient: vertical;
@@ -177,7 +177,7 @@
         width: 83.8%;
         height: 90.4%
     }
-        
+
     /*nedHelp*/
     #needHelp section{
         background-size: 78%;
@@ -249,12 +249,57 @@
         /*C++*/
     }
      /*nedHelp  END*/
-    
+
     /*    */
-        
+
     /*    */
-    
-    
+    /* OurCurses */
+    #OurCurses{
+      min-height: 740px;
+    }
+    #OurCurses > section > h2 {
+  font-size: 1.5em;
+}
+  #OurCurses > section > article {
+    flex-direction: column;
+  }
+#OurCurses > section > article > section:nth-child(1){
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+}
+#OurCurses > section > article section:nth-child(2){
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#OurCurses > section > article section:nth-child(2) button{
+  width: 50%;
+  height: 50%;
+  line-height: 5%;
+  font-size: 3vw;
+  margin: 0;
+  border-radius: 5px;
+}
+  #OurCurses > section > article section:nth-child(2) article{
+    display: none;
+  }
+  #OurCurses > section > article > section:nth-child(1) > article:nth-child(1) > img{
+    width:8%;
+    margin: 0;
+  }
+  #OurCurses > section > article > section:nth-child(1) > article:nth-child(1) > h3{
+    margin: 2% 0 ;
+    display: block;
+    font-size: 1em;
+  }
+
+  /* ----------------- */
+
     /*Alber :) */
     #subsCribe{
         display: -webkit-box;

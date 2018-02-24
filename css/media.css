@@ -124,8 +124,223 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:768px){
-    body{
-        display: none
+    .child_section{
+        width: 91.1%;
+        height: 100vh
+    }
+    /*H-W Child-sectio ---->--^*/
+    .text{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack:start;
+        -ms-flex-pack:start;
+        justify-content:flex-start;
+        
+    }
+    .text > p{
+        font-size: 5.3vw
+    }
+    .text > ul > li{
+        font-size: 5vw
+    }
+    .word{
+        width: 60%
+    }
+ .letter {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateZ(25px);
+  transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+  transform-origin: 50% 50% 25px;
+}
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+  transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+  transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+  transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075), -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+}
+    #implementedProjects >  section{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #dottedCubic{
+        width: 83.8%;
+        height: 90.4%
+    }
+   /*      */
+    
+    
+    /*nedHelp*/
+    #needHelp section{
+        background-size: 78%;
+    }
+    #needHelp > section > article{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    #needHelp > section > article > span:first-of-type{
+        font-size: 2.1vw
+    }
+    #needHelp > section > article > span:last-of-type{
+        font-size: 3vw
+    }
+    #GetStarted{
+        width: 35.9%;
+        height: 7vw;
+        font-size: 3.1vw;
+        margin: 9% auto
+    }
+    .floating_img > img:nth-child(1){
+        top: 31%;
+        width: 8.5%;
+        /*Android*/
+    }
+    .floating_img > img:nth-child(2){
+        width: 7%;
+        left: 30%;
+        bottom: 15%;
+        /* C# */
+    }
+    .floating_img > img:nth-child(3){
+        width: 6.8%;
+        top: 65%;
+        left: 14%;
+        /* CSS */
+    }
+    .floating_img > img:nth-child(4){
+        width: 12%;
+        bottom: 30%;
+        right: 20%;
+        /*PHP*/
+    }
+    .floating_img > img:nth-child(5){
+        width: 7.9%;
+        top: 27%;
+        right: 25%
+        /*Pytone*/
+    }
+    .floating_img > img:nth-child(6){
+        width: 6.8%;
+        right: 6%;
+        top: 50%;
+        /*HTML*/
+    }
+    .floating_img > img:nth-child(7){
+        top: 15%;
+        width: 7%;
+        left: 35%;
+        /*C++*/
+    }
+     /*nedHelp  END*/
+    
+    /*    */
+    
+    /*    */
+    
+    
+    /*Alber :) */
+    #subsCribe{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+    .child_section{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack:distribute;
+        justify-content:space-around;
+    }
+    .wise_words{
+        height: 28.6%;
+        background-size: cover;
+        width: 100%;
+        background-image: url(../img/aphorisms/Albert%20Eynshten2.png);
+        background-size: cover
+    }
+    .wise_words > article{
+        margin-left: 13%;
+    }
+    .wise_words > article h2{
+        font-size: 4vw;
+        font-weight: 100;
+    }
+    .wise_words > article span{
+        font-size: 2.4vw;
+        padding-top: 4%;
+    }
+    #subsCribe > section > h2{
+        font-size: 5.0vw;
+        margin: 0;
+        padding: 0
+    }
+    #userContact > input{
+       width: 65%;
+       padding: 0
+    }
+    #userContact input:last-child{
+        width: 45%;
+        margin-top: 3%;
+        height: 7vw;
+        font-size: 3.4vw;
+    }
+    #userContact > span{
+        width: 65%;
+    }
+    .be_informed {
+        margin-top: 0;
+    }
+    .be_informed > h3{
+        font-size: 3.1vw
+    }
+    .be_informed > p{
+        font-size: 2.3vw;
+        margin-top: 0;
+        margin-top: -2%
+    }
+    .be_informed > button{
+        height: 40px;
+        line-height: 39px;
+         padding-left: 40px;
+    }
+    .be_informed > button span{
+        width: 35px;
+        -webkit-box-shadow: 1px 1px 1px  #1f376a;
+        box-shadow: 0px 1px 1px  #1f376a;
     }
 }
 

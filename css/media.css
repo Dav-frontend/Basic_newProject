@@ -103,7 +103,6 @@
   }
   #userContact > input {
     height: 44px;
-    width: 25tpx;
   }
   #userContact input:last-child {
     font-size: 1.9vw;
@@ -300,23 +299,23 @@
         padding: 0
     }
     #userContact > input{
-       width: 65%;
+       width: 64%;
        padding: 0
     }
     #userContact input:last-child{
-        width: 45%;
+        width: 44%;
         margin-top: 3%;
-        height: 7vw;
+        height: 6.6vw;
         font-size: 3.4vw;
     }
     #userContact > span{
-        width: 65%;
+        width: 64%;
     }
     .be_informed {
         margin-top: 0;
     }
     .be_informed > h3{
-        font-size: 3.1vw
+        font-size: 3vw
     }
     .be_informed > p{
         font-size: 2.3vw;
@@ -338,7 +337,6 @@
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
-
 }
 
 

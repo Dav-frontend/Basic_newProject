@@ -117,6 +117,14 @@
   }
 }
 
+
+
+
+
+
+
+
+
 @media only screen and (min-width:320px) and (max-width:768px){
 
  /*                  */
@@ -167,20 +175,61 @@
 }
 
 /*    Mobile*/
-    #implementedProjects >  section{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+    
+    #implementedProjects > section{
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:reverse;
+        -ms-flex-direction:column-reverse;
+        flex-direction:column-reverse;
+        -ms-flex-line-pack:stretch;
+        align-content:stretch;
+        -ms-flex-pack: distribute;
+        justify-content: space-around
     }
     #dottedCubic{
-        width: 83.8%;
-        height: 90.4%
+        width: 50vw;
+        height: 55vw;
     }
+    #dottedCubic >legend > article{
+        width: 38vw
+    }
+    .text_container {
+        height:60% 
+    }
+    .text_container > h2{
+        font-size: 3.5vw;
+    } 
+    .text_container > span{
+        width: 40%
+    }
+    .text_container > p{
+        font-size: 2.6vw;
+        width: 45vw
+    }
+    .text_container > button{
+        font-size: 2.5vw;
+        margin-top: -3vw
+    }
+     .overflow-y-bar{
+        width: 50vw;
+        height: 56vw
+    }
+    .overflow-y-bar > ul > li{
+        font-size: 2.6vw;
+        line-height: 5vw
+    }
+<<<<<<< HEAD
+=======
 
+>>>>>>> e454351b6b333400103d7c3b332572076d76dcc7
     /*nedHelp*/
     #needHelp section{
         background-size: 78%;
+        min-height: 540px;
+        /*Minimum Height it's nedHelp > section*/
     }
     #needHelp > section > article{
         display: -webkit-box;
@@ -320,7 +369,12 @@
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center
+        align-items: center;
+        min-height: 600px;
+    }
+    #subsCribe > section{
+        min-height: 560px;
+         /*Minimum Height it's #subsCribe > section*/
     }
     .child_section{
         /* display: -webkit-box;
@@ -338,7 +392,7 @@
         background-size: cover;
         width: 100%;
         background-image: url(../img/aphorisms/Albert%20Eynshten2.png);
-        background-size: cover
+        background-size: cover;    
     }
     .wise_words > article{
         margin-left: 13%;
@@ -391,6 +445,16 @@
         box-shadow: 0px 1px 1px  #1f376a;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {

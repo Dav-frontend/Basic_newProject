@@ -26,10 +26,22 @@
         width: 90%;
     }
     /*Vazgen du qon@ stex gri*/
-      // #OurCurses{
-      //   min-height: 740px;
-      //   >section{}
-      // }
+      #OurCurses{
+        >section{
+          >article{
+            section:nth-child(2){
+              >article{
+                h3{
+                  font-size: 1em;
+                }
+                p{
+                  font-size: 0.7em;
+                }
+              }
+            }
+          }
+        }
+      }
 //    section2 scroll-list + Raket;
     .overflow-y-bar{
         width: 40.7%;
@@ -139,4 +151,26 @@
         }
       }
   }
+  // ____________________
+
+  // section8 partners
+  #partner{
+    section{
+      width: 90%;
+      justify-content: center;
+      >section{
+        width: 200px;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
+        >article{
+          width: 100%;
+          >article{
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+// __________
 }

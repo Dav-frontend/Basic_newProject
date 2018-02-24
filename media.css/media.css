@@ -20,6 +20,12 @@
     width: 90%;
   }
   /*Vazgen du qon@ stex gri*/
+  #OurCurses > section > article section:nth-child(2) > article h3 {
+    font-size: 1em;
+  }
+  #OurCurses > section > article section:nth-child(2) > article p {
+    font-size: 0.7em;
+  }
   .overflow-y-bar {
     width: 40.7%;
     height: 39.5%;
@@ -114,5 +120,21 @@
   }
   #OurCurses > section > article > section:nth-child(2) article {
     display: none;
+  }
+  #partner section {
+    width: 90%;
+    justify-content: center;
+  }
+  #partner section > section {
+    width: 200px;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  #partner section > section > article {
+    width: 100%;
+  }
+  #partner section > section > article > article {
+    min-width: 100px;
   }
 }

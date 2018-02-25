@@ -26,7 +26,22 @@
         width: 90%;
     }
     /*Vazgen du qon@ stex gri*/
-    
+      #OurCurses{
+        >section{
+          >article{
+            section:nth-child(2){
+              >article{
+                h3{
+                  font-size: 1em;
+                }
+                p{
+                  font-size: 0.7em;
+                }
+              }
+            }
+          }
+        }
+      }
 //    section2 scroll-list + Raket;
     .overflow-y-bar{
         width: 40.7%;
@@ -57,7 +72,7 @@
         width: 90%;
         font-size: 1.8vw;
     }
-    
+
 //    section3 ned Help
     #needHelp>section>article:first-child{
         >span{
@@ -74,6 +89,7 @@
         height: 43px;
         font-size: 1.7vw;
     }
+<<<<<<< HEAD
 //    section4 Coment none
     
     //datark
@@ -369,4 +385,96 @@
         -webkit-box-shadow: 1px 1px 1px  #1f376a;
         box-shadow: 0px 1px 1px  #1f376a;
     }
+    
+}//.
+@media only screen and (min-width:320px) and (max-width:768px){
+  // section2 Our Curses
+    
+    .mouse_pad > a{
+    position: absolute;
+    bottom: 0;
+    margin-left: -7.8%;
+    img{
+       width: 98%;
+    }
+}
+  #OurCurses{
+      min-height: 740px;
+      >section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 620px;
+        >h2{
+          font-size: 1.5em;
+        }
+        >article{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 75%;
+          >section:nth-child(1){
+            width: 330px;
+            max-width: 100%;
+            height: 70%;
+            border-radius: 10px 10px 0 0;
+            >article:nth-child(1){
+              img{
+                width:9%;
+                margin: 0;
+              }
+              h3{
+                margin: 2% 0 ;
+                display: block;
+                font-size: 1em;
+              }
+            }
+          }
+          >section:nth-child(2){
+            width: 330px;
+            max-width: 100%;
+            height: 30%;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            button{
+              width: 45%;
+              height: 55%;
+              line-height: 5%;
+              font-size: 0.8em;
+              margin: 0;
+              border-radius: 5px;
+            }
+            article{
+              display: none;
+            }
+          }
+        }
+      }
+  }
+  // ____________________
+
+  // section8 partners
+  #partner{
+    section{
+      width: 90%;
+      justify-content: center;
+      >section{
+        width: 200px;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
+        >article{
+          width: 100%;
+          >article{
+            min-width: 100px;
+          }
+        }
+      }
+    }
+  }
+// __________
 }

@@ -221,10 +221,8 @@
         font-size: 2.6vw;
         line-height: 5vw
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> e454351b6b333400103d7c3b332572076d76dcc7
+
     /*nedHelp*/
     #needHelp section{
         background-size: 78%;
@@ -308,9 +306,18 @@
 
     }
     #OurCurses > section{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       height: 560px;
     }
@@ -318,8 +325,15 @@
   font-size: 1.5em;
 }
   #OurCurses > section > article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 75%;
   }
@@ -335,8 +349,14 @@
   height: 20%;
   text-align: center;
   border-radius: 0 0 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #OurCurses > section > article section:nth-child(2) button{
@@ -377,7 +397,7 @@
          /*Minimum Height it's #subsCribe > section*/
     }
     .child_section{
-        /* display: -webkit-box;
+         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
@@ -385,7 +405,7 @@
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-pack:distribute;
-        justify-content:space-around; */
+        justify-content:space-around; 
     }
     .wise_words{
         height: 28.6%;

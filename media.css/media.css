@@ -59,4 +59,263 @@
     height: 43px;
     font-size: 1.7vw;
   }
+  #subsCribe > section > h2 {
+    font-size: 2.3vw;
+  }
+  .wise_words {
+    background-size: cover;
+    background-position: center;
+    margin-top: 5%;
+  }
+  .wise_words > article {
+    margin-left: 13%;
+  }
+  .wise_words > article > h2 {
+    font-size: 2.2vw;
+    font-weight: 100;
+  }
+  .wise_words > article > span {
+    font-size: 1.4vw;
+  }
+  #userContact > input {
+    height: 44px;
+  }
+  #userContact > input:last-child {
+    font-size: 1.9vw;
+    margin-top: 2%;
+  }
+  .be_informed > h3 {
+    font-size: 1.6vw;
+    margin-top: -2%;
+  }
+  .be_informed > p {
+    font-size: 1.4vw;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /*Child section Width end Height*/
+  /*                   */
+  .child_section {
+    width: 91.1%;
+    height: 100vh;
+  }
+  /*                    */
+  /*style Header: text Animation*/
+  .text > p {
+    font-size: 5.3vw;
+  }
+  .text > ul > li {
+    font-size: 5vw;
+  }
+  .word {
+    width: 60%;
+  }
+  .letter {
+    display: inline-block;
+    position: relative;
+    -webkit-transform: translateZ(25px);
+    transform: translateZ(25px);
+    -webkit-transform-origin: 50% 50% 25px;
+    transform-origin: 50% 50% 25px;
+  }
+  .letter.out {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .letter.behind {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+  .letter.in {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+    transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+    transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+    transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075), -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+  }
+  /*section1 Vazgen@ gre stex*/
+  #implementedProjects > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  #dottedCubic {
+    width: 50vw;
+    height: 55vw;
+  }
+  #dottedCubic > legend > article {
+    width: 38vw;
+  }
+  .text_container {
+    height: 60%;
+  }
+  .text_container > h2 {
+    font-size: 3.5vw;
+  }
+  .text_container > span {
+    width: 40%;
+  }
+  .text_container > p {
+    font-size: 2.6vw;
+    width: 45vw;
+  }
+  .text_container > button {
+    font-size: 2.5vw;
+    margin-top: -3vw;
+  }
+  .overflow-y-bar {
+    width: 50vw;
+    height: 56vw;
+  }
+  .overflow-y-bar > ul > li {
+    font-size: 2.6vw;
+    line-height: 5vw;
+  }
+  #needHelp section {
+    background-size: 78%;
+    min-height: 540px;
+    /*min-height Height it's nedHelp > section*/
+  }
+  #needHelp section > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #needHelp section > article > span:first-of-type {
+    font-size: 2.1vw;
+  }
+  #needHelp section > article > span:last-of-type {
+    font-size: 3vw;
+  }
+  #GetStarted {
+    width: 35.9%;
+    height: 7vw;
+    font-size: 3.1vw;
+    margin: 9% auto;
+  }
+  .floating_img > img:nth-child(1) {
+    top: 31%;
+    width: 8.5%;
+    /*Android*/
+  }
+  .floating_img > img:nth-child(2) {
+    width: 7%;
+    left: 30%;
+    bottom: 15%;
+    /* C# */
+  }
+  .floating_img > img:nth-child(3) {
+    width: 6.8%;
+    top: 65%;
+    left: 14%;
+    /* CSS */
+  }
+  .floating_img > img:nth-child(4) {
+    width: 12%;
+    bottom: 30%;
+    right: 20%;
+    /*PHP*/
+  }
+  .floating_img > img:nth-child(5) {
+    width: 7.9%;
+    top: 27%;
+    right: 25% /*Pytone*/;
+  }
+  .floating_img > img:nth-child(6) {
+    width: 6.8%;
+    right: 6%;
+    top: 50%;
+    /*HTML*/
+  }
+  .floating_img > img:nth-child(7) {
+    top: 15%;
+    width: 7%;
+    left: 35%;
+    /*C++*/
+  }
+  #subsCribe {
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    /*min-height Height it's #subsCribe*/
+  }
+  #subsCribe > section {
+    min-height: 560px;
+    /*min-height*/
+  }
+  .child_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .wise_words {
+    height: 28.6%;
+    width: 100%;
+    background-image: url(../img/aphorisms/Albert%20Eynshten2.png);
+    background-size: cover;
+  }
+  .wise_words > article {
+    margin-left: 13%;
+  }
+  .wise_words > article > h2 {
+    font-size: 4vw;
+    font-weight: 100;
+  }
+  .wise_words > article > span {
+    font-size: 2.4vw;
+    padding-top: 4%;
+  }
+  #subsCribe > section > h2 {
+    font-size: 5.0vw;
+    margin: 0;
+    padding: 0;
+  }
+  #userContact > input {
+    width: 64%;
+    padding: 0;
+  }
+  #userContact input:last-child {
+    width: 44%;
+    margin-top: 3%;
+    height: 6.6vw;
+    font-size: 3.4vw;
+  }
+  #userContact > span {
+    width: 64%;
+  }
+  .be_informed {
+    margin-top: 0;
+  }
+  .be_informed > h3 {
+    font-size: 3vw;
+  }
+  .be_informed > p {
+    font-size: 2.3vw;
+    margin-top: 0;
+    margin-top: -2%;
+  }
+  .be_informed > button {
+    height: 40px;
+    line-height: 39px;
+    padding-left: 40px;
+  }
+  .be_informed > button span {
+    width: 35px;
+    -webkit-box-shadow: 1px 1px 1px  #1f376a;
+    box-shadow: 0px 1px 1px  #1f376a;
+  }
 }

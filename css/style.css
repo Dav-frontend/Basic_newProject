@@ -561,21 +561,24 @@ header > a img {
   flex-direction: column;
   justify-content: center;
 }
+#partner section > section {
+  width: 100%;
+}
+#partner section > section > article {
+  height: 10%;
+  margin-top: 2%;
+}
+#partner section > section > article > article {
+  height: 100%;
+}
+#partner section > section > article > article > a > img {
+  height: 100%;
+  width: 100%;
+}
 #partner section h2 {
   text-align: center;
   margin: 20px 0;
   font-size: 2vw;
-}
-#partner section > article {
-  height: 10%;
-  margin-top: 2%;
-}
-#partner section > article > article {
-  height: 100%;
-}
-#partner section > article > article > a > img {
-  height: 100%;
-  width: 100%;
 }
 #partner section > .partners1 {
   display: flex;

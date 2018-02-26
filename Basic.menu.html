@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            display: flex;
+            justify-content:flex-end;
+        }
+        .menu > span{
+            margin-left: -1%;
+            margin-top: 1%;
+            cursor: pointer;
+        }
+        section{
+            width: 100%;
+            height: 89.3vh;
+            background-color: black;
+            position: absolute;
+            transition:0.90s;
+            transform: translate(-100%);
+        }
+        .BodyMenu{
+            transform: translate(0%);
+        }
+        .textNavbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5vw;
+            font-family: sans-serif;
+        }
+        .textNavbar > ul > li > a{
+            color: #ffff;
+            text-decoration: none
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <span onclick="clickMenu()"><img src="https://image.flaticon.com/icons/png/512/52/52152.png" alt="" width="50"></span>
+    </nav>
+    <section>
+        <nav class="textNavbar">
+            <ul>
+                <li><a href="">text</a></li>
+                <li><a href="">text</a></li>
+                <li><a href="">text</a></li>
+                <li><a href="">text</a></li>
+                <li><a href="">text</a></li>
+            </ul>
+        </nav>
+    </section>
+    <script type="text/javascript">
+        function clickMenu(){
+            document.querySelector("section").className="BodyMenu"
+        }
+    </script>
+</body>
+</html>

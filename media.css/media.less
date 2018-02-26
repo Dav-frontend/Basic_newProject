@@ -13,6 +13,23 @@
     }
 //    ------------------------------
         /*style Header: text Animation*/
+    header > a img {
+      max-width: 90%;
+    }
+    .bar1,
+    .bar2,
+    .bar3{
+        width: 30px;
+        height: 3px
+    }
+      .change .bar1 {
+      transform: rotate(-45deg) translate(-5px, 4px);}
+    #fixedBar > ul li:first-of-type{
+        font-size: 1.2em;
+    }
+    #fixedBar > ul li > a img {
+      max-width: 92%;
+    }
     .text{
         >p{
             font-size: 3.5vw;
@@ -89,7 +106,7 @@
         height: 43px;
         font-size: 1.7vw;
     }
-<<<<<<< HEAD
+
 //    section4 Coment none
     
     //datark
@@ -195,17 +212,11 @@
 //section 2 scroll-list + Raket
     
     #implementedProjects > section{
-       display: -webkit-box;
-       display: -ms-flexbox;
        display: flex;
-        -webkit-box-orient:vertical;
-        -webkit-box-direction:reverse;
-        -ms-flex-direction:column-reverse;
         flex-direction:column-reverse;
-        -ms-flex-line-pack:stretch;
         align-content:stretch;
-        -ms-flex-pack: distribute;
         justify-content: space-around;
+        min-height: 610px;
     }
     
     #dottedCubic{
@@ -235,6 +246,7 @@
     .overflow-y-bar{
         width: 50vw;
         height: 56vw;
+        box-shadow: 0px -5px 9px #9a9a9a inset;   
         >ul>li{
             font-size: 2.6vw;
             line-height: 5vw

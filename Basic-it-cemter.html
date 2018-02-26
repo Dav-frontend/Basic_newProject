@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic IT Center</title>
-    <script src="css/less.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.less">
     <link rel="stylesheet" href="media.css/media.less">
     <link rel="stylesheet" href="media.css/media.css">
-    <link rel="stylesheet" href="css/style.less">
-    <link rel="stylesheet" href="media.css/media.less">
-    <link rel="stylesheet" href="media.css/media.css">
+    <link rel="stylesheet" href="css/animate (1).css">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="svg-with-js/fontawesome-all.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
-    <link rel="stylesheet" href="css/animate (1).css">
+    <script src="svg-with-js/fontawesome-all.js"></script>
+    <script src="css/less.min.js"></script>
     <script>new WOW().init();</script>
 </head>
 <body>
@@ -24,9 +21,9 @@
        <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
        <nav id="fixedBar">
            <ul>
-               <li><span>+374 11 65 99 88</span></li>
+               <li><span onclick="x()">+374 11 65 99 88</span></li>
                <li><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
-               <li onclick="myFunction(this)" class="icon_container">
+               <li onclick="myFunction(this)" class="icon_container" >
                    <span class="bar1"></span>
                    <span class="bar2"></span>
                    <span class="bar3"></span>
@@ -35,7 +32,11 @@
            </ul>
        </nav>
    </header>
-
+   
+   
+    <article class="slide-right" id="clickOn">
+                
+       </article>
                                 <!--  The site is fixed---^ -->
 
    <video autoplay loop muted preload="auto">
@@ -72,8 +73,8 @@
 
        <section id="OurCurses" class="container_consolidation">
           <section class="child_section" id="page1">
-            <h2 class="wow pulse" data-wow-offset="40"  data-wow-iteration="5">Our Courses</h2>
-              <article>
+            <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
+              <article class="wow bounceInRight" data-wow-delay="0.40s" >
               <section>
                 <article>
                   <h3>Web Programming Course</h3>
@@ -93,7 +94,7 @@
               </section>
             </article>
 
-            <article>
+            <article class="wow bounceInLeft" data-wow-delay="0.40s" >
               <section>
                 <article>
                   <h3>Web Programming Course</h3>
@@ -115,9 +116,9 @@
           </section>
        </section>
 
-       <section class="container_consolidation" id="implementedProjects">
+       <section class="container_consolidation"  id="implementedProjects"> 
           <section class="child_section">
-            <nav class="overflow-y-bar wow fadeInLeft">
+            <nav class="overflow-y-bar wow fadeInLeft" data-wow-delay="0.40s" data-wow-duration="1.20s">
                 <ul>
                  <li><a href="#">THE LATEST TECHNOLOGIES</a><span>&uarr;</span></li>
                  <li><a href="#">STARTUP PROJECTS</a><span>	&uarr;</span></li>
@@ -130,7 +131,7 @@
                 </ul>
             </nav>
 
-            <fieldset id="dottedCubic" class="wow fadeInRight">
+            <fieldset id="dottedCubic" class="wow fadeInRight" data-wow-delay="0.40s" data-wow-duration="1.20s">
                 <legend><article><img src="img/project/rocket.png" alt=""></article></legend>
                  <article class="text_container">
                    <h2>STARTUP PROJECTS</h2>
@@ -179,7 +180,7 @@
        <section class="container_consolidation" id="subsCribe">
            <section class="child_section">
 
-                   <article class="wise_words">
+                   <article class="wise_words wow slideInDown" data-wow-duration="1.20s">
                        <article class="aphorisms">
                            <h2>Creativity is contagious<br> pass it on</h2>
                             <span>Albert Einshtein</span>
@@ -194,7 +195,7 @@
                        <span></span>
                        <input id="userMail"type="email*" placeholder="E-mail" required>
                        <span></span>
-                       <input type="submit" id="cl">
+                       <input class="wow flipInX" data-wow-duration="1.5s" data-wow-delay="0.80s"type="submit" id="cl">
                    </form>
 
              <article class="be_informed">
@@ -325,6 +326,11 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+        
+        function x(){
+            document.getElementById("clickOn").style.transform = 'translate(0%)';
+            document.querySelector("body").style.height="0vh"
+        }
     </script>
 </body>
 </html>

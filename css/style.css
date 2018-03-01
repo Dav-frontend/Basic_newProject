@@ -249,6 +249,7 @@ header > a img {
   position: absolute;
   width: 36%;
   opacity: 0;
+  white-space: pre-wrap;
 }
 .letter {
   display: inline-block;

@@ -66,9 +66,7 @@ header > a img {
   background-color: black;
   height: 100vh;
   z-index: 2;
-  -webkit-transform: translate(-100%);
   transform: translate(-100%);
-  -webkit-transition: 0.80s;
   transition: 0.80s;
 }
 .slide_Menu {
@@ -90,6 +88,83 @@ header > a img {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-6px, 6px);
 }
+#type_writer {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.cd-intro {
+  width: 90%;
+  text-align: center;
+  margin: 4em auto;
+}
+.cd-headline {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+.cd-words-wrapper {
+  display: inline-block;
+  text-align: left;
+  color: #ffffff;
+}
+.cd-words-wrapper > b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  font-weight: 500;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+}
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+.cd-headline.slide span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.cd-headline.slide .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.slide b {
+  opacity: 0;
+  top: .2em;
+}
+.cd-headline > span:first-of-type {
+  color: #ff0000;
+}
+.cd-headline.slide b.is-visible {
+  top: 0;
+  opacity: 1;
+  -webkit-animation: slide-in 0.6s;
+  animation: slide-in 0.6s;
+}
+.cd-headline.slide b.is-hidden {
+  -webkit-animation: slide-out 0.6s;
+  animation: slide-out 0.6s;
+}
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
 .change .bar2 {
   opacity: 0;
 }
@@ -103,8 +178,6 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -122,14 +195,14 @@ header > a img {
 #fixedBar > ul li > a img {
   max-width: 100%;
 }
-
 .content {
   min-width: 638px;
 }
 .mouse_pad > a {
   position: absolute;
   bottom: 0;
-  margin-left: -7.8%;
+  left: 50%;
+  width: 2.1rem;
 }
 .mouse_pad > a img {
   width: 98%;
@@ -143,29 +216,16 @@ header > a img {
 /*full_style section*/
 /*full_style section*/
 #OurCurses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: #eeeeee;
   height: 100vh;
   min-height: 650px;
 }
 #OurCurses > section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 #OurCurses > section > h2 {
@@ -176,12 +236,7 @@ header > a img {
 #OurCurses > section > article {
   width: 100%;
   height: 36%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 30px;
 }
@@ -242,8 +297,6 @@ header > a img {
   margin-top: 1%;
 }
 .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 50px;
   margin-left: -110%;
@@ -267,54 +320,31 @@ header > a img {
 .letter {
   display: inline-block;
   position: relative;
-  -webkit-transform: translateZ(25px);
   transform: translateZ(25px);
-  -webkit-transform-origin: 50% 50% 25px;
   transform-origin: 50% 50% 25px;
 }
 .letter.out {
-  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
-  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .letter.behind {
-  -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 .letter.in {
-  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
-  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #implementedProjects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   /*<---Parent Element*/
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 650px;
 }
 #implementedProjects > section {
   /*W-H Of Child Elemet*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 /*Child section*/
@@ -393,14 +423,8 @@ header > a img {
   cursor: pointer;
 }
 #needHelp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #eeeeee;
@@ -488,14 +512,8 @@ header > a img {
   width: 5%;
 }
 #subsCribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   min-height: 650px;
 }
@@ -513,14 +531,8 @@ header > a img {
   margin-top: 3.5%;
   background-image: url(../img/aphorisms/Albert%20Eynshten.png);
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
 }
@@ -541,18 +553,9 @@ header > a img {
 }
 /*    input area    */
 #userContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #userContact > input {
@@ -627,29 +630,15 @@ header > a img {
 #partner {
   background-color: #ffffff;
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #partner section {
   width: 57%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 #partner section > section {
@@ -672,21 +661,14 @@ header > a img {
   font-size: 2vw;
 }
 #partner section > .partners1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 #partner section > .partners1 article {
   width: 15%;
 }
 #partner section > .partners2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 #partner section > .partners2 article:nth-of-type(1) {
@@ -702,11 +684,7 @@ header > a img {
   width: 8.8%;
 }
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: #24282d;
   height: 50vh;
@@ -722,18 +700,9 @@ footer h3 {
 footer > section:nth-of-type(1) {
   width: 57%;
   height: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 footer > section:nth-of-type(1) nav {

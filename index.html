@@ -13,9 +13,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
+    
     <script src="css/less.min.js"></script>
     <script src="js/modernizr.js"></script>
-    <script src="js/modernizr.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--    <link rel="stylesheet" href="CSS2/Menu.css">-->
+   <link rel="stylesheet" href="CSS2/FullMenu.css">
+   <script src="JavaScript/Animated.js"></script>
+   
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>new WOW().init();</script>
 </head>
 <body>
@@ -26,13 +33,29 @@
                <li><span onclick="x()">+374 11 65 99 88</span></li>
                <li><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
                <li onclick="myFunction(this)" class="icon_container" >
+<!--
                    <span class="bar1"></span>
                    <span class="bar2"></span>
                    <span class="bar3"></span>
+-->               <button class="menu"><span></span></button>
+
                </li>
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
        </nav>
+       <div class="wrapper">
+  <nav role='navigation' class="navigator-on">
+    <div class="elem" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
+      <ul>
+        <li name="home"><a href="#">Home</a></li>
+        <li name="about"><a href="#">About</a></li>
+        <li name="blog"><a href="#">Blog</a></li>
+        <li name="contact"><a href="#">Contact</a></li>
+        <li name="jquery"><a href="#">jQueryScript</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
    </header>
 
                                 <!--  The site is fixed---^ -->
@@ -62,7 +85,6 @@
                 <a href="#page1"><img src="img/logo/mouse.png" alt=""></a>
                </article>
     </section>
-
 
                                <!--Become a developer-->
 
@@ -242,7 +264,7 @@
                  </section>
             </section>
 
-                                           <!-- footer -->
+                                   <!-- footer -->
             <footer>
               <section>
                   <nav>
@@ -272,10 +294,27 @@
               </section>
             </footer>
        </section>
+       
+       
 <!--       <script src="js/type-writer.js"></script>-->
 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
+    
+  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>
 <!--https://michalsnik.github.io/aos/-->

@@ -5,6 +5,13 @@
 /*M-(2) iPone --> max-width-768 end min-width-320*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*Child section Width end Height*/
+  .cd-headline > span:first-child {
+    font-size: 2.2rem;
+  }
+  .cd-headline > span:last-child {
+    font-size: 2rem;
+    font-weight: none;
+  }
   .child_section {
     width: 74.4%;
     height: 92.8%;
@@ -125,44 +132,55 @@
   }
   /*                    */
   /*style Header: text Animation*/
-  .text > p {
-    font-size: 5.3vw;
+  header > a {
+    width: 22%;
   }
-  .text > ul > li {
-    font-size: 5vw;
+  header > a > nav > ul > li {
+    width: 15%;
   }
-  .word {
-    width: 60%;
+  #fixedBar > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 6%;
   }
-  .letter {
-    display: inline-block;
-    position: relative;
-    -webkit-transform: translateZ(25px);
-    transform: translateZ(25px);
-    -webkit-transform-origin: 50% 50% 25px;
-    transform-origin: 50% 50% 25px;
+  #fixedBar > ul > li {
+    margin-left: 20px;
   }
-  .letter.out {
-    -webkit-transform: rotateX(90deg);
-    transform: rotateX(90deg);
-    -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  #fixedBar > ul > li:first-child {
+    display: none;
   }
-  .letter.behind {
-    -webkit-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
+  #fixedBar > ul > li:last-child {
+    width: 25%;
   }
-  .letter.in {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
-    transition: -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
-    transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
-    transition: transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075), -webkit-transform 0.999s cubic-bezier(0.19, 0.5, 0.302, 1.2075);
+  .cd-intro {
+    display: flex;
+    justify-content: center;
   }
-  /*section1 Vazgen@ gre stex*/
+  .cd-headline {
+    text-align: center;
+  }
+  .cd-headline > span:first-child {
+    font-size: 2rem;
+  }
+  .cd-headline > span:last-child {
+    font-size: 1.8rem;
+  }
+  .mouse_pad > a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 2rem;
+  }
+  .mouse_pad > a img {
+    width: 98%;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+    height: 2px;
+  }
   #implementedProjects > section {
     display: flex;
     flex-direction: column-reverse;
@@ -323,29 +341,35 @@
     font-size: 3vw;
   }
   .be_informed > p {
-    font-size: 2.3vw;
+    font-size: 2.7vw;
     margin-top: 0;
     margin-top: -2%;
   }
   .be_informed > button {
-    height: 40px;
-    line-height: 39px;
-    padding-left: 40px;
+    width: 165px;
+    height: 35px;
+    line-height: 34px;
+    padding-left: 35px;
+    font-size: 10px;
+    text-align: left;
+    margin-top: 6%;
   }
   .be_informed > button span {
-    width: 35px;
+    width: 30px;
     -webkit-box-shadow: 1px 1px 1px  #1f376a;
     box-shadow: 0px 1px 1px  #1f376a;
+    text-align: center;
+    font-size: 17px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .mouse_pad > a {
     position: absolute;
     bottom: 0;
-    margin-left: -7.8%;
+    left: 49%;
   }
   .mouse_pad > a img {
-    width: 98%;
+    width: 1.7rem;
   }
   #OurCurses {
     min-height: 740px;

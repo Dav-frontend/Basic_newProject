@@ -13,7 +13,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
-
     <script src="css/less.min.js"></script>
     <script src="js/modernizr.js"></script>
 
@@ -44,7 +43,7 @@
            </ul>
        </span>
     <div class="wrapper">
-    
+
   <nav role="navigation" class="navigator-on">
     <div class="elem" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
       <ul class="nav_bar">
@@ -65,14 +64,19 @@
         </span>
       </ul>
     </div>
+
+    <section class="backgroundColor">
+
+    </section>
   </nav>
 </div>
-  
+
    </header>
 
 
+
                                 <!--  The site is fixed---^ -->
-   <video autoplay loop muted preload="auto">
+   <video class="backgroundColor" autoplay loop muted preload="auto">
         <source src="video/Background.mp4">
    </video>
                        <!-- Background-Video---^-->
@@ -310,7 +314,7 @@
 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
-    
+
      <script src="JavaScript/Animated.js"></script>
 <script type="text/javascript">
 
@@ -343,6 +347,10 @@
       $('nav ul').removeClass('active');
       $('nav').delay(800).fadeOut('slow');
       setTimeout(function() {
+        $('.mouse_pad').removeClass('active')
+        $('.cd-headline').removeClass('active')
+        $('.container_consolidation').removeClass('active');
+        $('.backgroundColor').removeClass('active');
         $('.menu').removeClass('active');
         $('.section-wrap,body').removeClass('active');
        }, 800);
@@ -352,7 +360,10 @@
       $('nav').addClass('active');
       $('nav ul').addClass('active');
       $('.section-wrap,body').addClass('active');
-    }
+      $('.backgroundColor').addClass('active');
+    } $('.container_consolidation').addClass('active');
+      $('.cd-headline').addClass('active')
+      $('.mouse_pad').addClass('active')
     });
 
     /*MOUSEMOVE TRANSFORM 3D*/

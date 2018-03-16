@@ -1,18 +1,18 @@
 /*MENU*/
 
-$('.menu, nav').click(function(){
+$('.menu, .navigator-on').click(function(){
 if ($('.menu').hasClass('active')) {
-  $('nav ul').removeClass('active');
-  $('nav').delay(800).fadeOut('slow');
+  $('.navigator-on').removeClass('active');
+  $('.navigator-on').delay(800).fadeOut('slow');
   setTimeout(function() {
     $('.menu').removeClass('active');
     $('.section-wrap').removeClass('active');
    }, 800);
 } else {
 	$('.menu').addClass('active');
-  $('nav').fadeIn('slow');
-  $('nav').addClass('active');
-  $('nav ul').addClass('active');
+  $('.navigator-on').fadeIn('slow');
+  $('.navigator-on').addClass('active');
+  $('.navigator-on').addClass('active');
   $('.section-wrap').addClass('active');
 }
 });
@@ -51,7 +51,7 @@ if ($('.menu').hasClass('active')) {
 
 
 
-$('nav ul li').on('click', function(){
+$('.navigator-on > div > li').on('click', function(){
 	/*here we make a variable to get the name of the clicked li*/
 	var elementName = $(this).attr('name');
 	$('.page.active').fadeOut(800).removeClass('active');

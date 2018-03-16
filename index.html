@@ -13,19 +13,23 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
-    
+
     <script src="css/less.min.js"></script>
     <script src="js/modernizr.js"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<!--    <link rel="stylesheet" href="CSS2/Menu.css">-->
+
+
+    <!--    <link rel="stylesheet" href="CSS2/Menu.css">-->
    <link rel="stylesheet" href="CSS2/FullMenu.css">
-    <script>new WOW().init();</script>
+
+
+   <script src="JavaScript/Animated.js"></script>
+   <script>new WOW().init();</script>
+
 </head>
 <body>
-   <header>
+   <header >
        <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
-       <nav id="fixedBar">
+       <span id="fixedBar">
            <ul>
                <li><span onclick="x()">+374 11 65 99 88</span></li>
                <li><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
@@ -34,34 +38,36 @@
                    <span class="bar1"></span>
                    <span class="bar2"></span>
                    <span class="bar3"></span>
--->        
+-->        <button class="menu"><span></span></button>
                </li>
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
-       </nav>
-       <div class="wrapper">
-  <nav role='navigation' class="navigator-on">
+       </span>
+    <div class="wrapper">
+    
+  <nav role="navigation" class="navigator-on">
     <div class="elem" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
-      <ul>
-        <li name="home"><a href="#">Home</a></li>
-        <li name="about"><a href="#">About</a></li>
-        <li name="blog"><a href="#">Blog</a></li>
-        <li name="contact"><a href="#">Contact</a></li>
-        <li name="jquery"><a href="#">jQueryScript</a></li>
+      <ul class="nav_bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">jQueryScript</a></li>
       </ul>
     </div>
   </nav>
 </div>
+  
    </header>
 
+
                                 <!--  The site is fixed---^ -->
-                               <button class="menu"><span></span></button>
    <video autoplay loop muted preload="auto">
         <source src="video/Background.mp4">
    </video>
                        <!-- Background-Video---^-->
-                       
-    <section id="type_writer">
+
+    <section id="type_writer" class="section-wrap page about">
         <section class="cd-intro">
             <h1 class="cd-headline slide">
                 <span>We teach</span>
@@ -84,7 +90,7 @@
 
                                <!--Become a developer-->
 
-       <section id="OurCurses" class="container_consolidation">
+       <section id="OurCurses" class="container_consolidation section-wrap page about" >
           <section class="child_section" id="page1">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
@@ -129,9 +135,9 @@
           </section>
        </section>
 
-       <section class="container_consolidation"  id="implementedProjects">
+       <section class="container_consolidation section-wrap page about"  id="implementedProjects">
           <section class="child_section">
-            <nav class="overflow-y-bar wow fadeInLeft" data-wow-delay="0.40s" data-wow-duration="1.20s">
+            <div class="overflow-y-bar wow fadeInLeft" data-wow-delay="0.40s" data-wow-duration="1.20s">
                 <ul>
                  <li><a href="#">THE LATEST TECHNOLOGIES</a><span>&uarr;</span></li>
                  <li><a href="#">STARTUP PROJECTS</a><span>	&uarr;</span></li>
@@ -142,7 +148,7 @@
                  <li><a href="#">RIGHT CODING</a><span>&uarr;</span></li>
                  <li><a href="#">GRADUATES</a><span>&uarr;</span></li>
                 </ul>
-            </nav>
+            </div>
 
             <fieldset id="dottedCubic" class="wow fadeInRight" data-wow-delay="0.40s" data-wow-duration="1.20s">
                 <legend><article><img src="img/project/rocket.png" alt=""></article></legend>
@@ -160,23 +166,23 @@
        </section>
 
 
-       <section class="container_consolidation" id="needHelp">
+       <section class="container_consolidation section-wrap page about" id="needHelp">
           <article class="floating_img  parallax-viewport" id="parallax">
-              
+
               <img class='programing1'src="img/programing/Android.png" alt="Android">
 
-            
+
               <img class='programing2'src="img/programing/C.png" alt="C#">
 
-             
+
               <img class='programing3'src="img/programing/CSS.png" alt="CSS">
-              
-             
+
+
               <img class='programing4'src="img/programing/php.png" alt="PHP">
 
               <img class='programing5'src="img/programing/Python.png" alt="Python">
 
-          
+
               <img class='programing6'src="img/programing/HTML.png" alt="HTML">
 
               <img class='programing7'src="img/programing/C++.png" alt="C++">
@@ -202,7 +208,7 @@
        </section>
 
                            <!--subscribe to our site-->
-       <section class="container_consolidation" id="subsCribe">
+       <section class="container_consolidation section-wrap page about" id="subsCribe">
            <section class="child_section">
 
                    <article class="wise_words wow slideInDown" data-wow-duration="1.20s">
@@ -290,10 +296,7 @@
               </section>
             </footer>
        </section>
-       
-       
-       
-<!--       <script src="js/type-writer.js"></script>-->
+
 
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script>
@@ -312,6 +315,91 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+
+
+<!--       <script src="js/type-writer.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+
+    <script>
+
+    /*MENU*/
+
+    $('.menu, nav').click(function(){
+    if ($('.menu').hasClass('active')) {
+      $('nav ul').removeClass('active');
+      $('nav').delay(800).fadeOut('slow');
+      setTimeout(function() {
+        $('.menu').removeClass('active');
+        $('.section-wrap,body').removeClass('active');
+       }, 800);
+    } else {
+    	$('.menu').addClass('active');
+      $('nav').fadeIn('slow');
+      $('nav').addClass('active');
+      $('nav ul').addClass('active');
+      $('.section-wrap,body').addClass('active');
+    }
+    });
+
+    /*MOUSEMOVE TRANSFORM 3D*/
+
+    !(function ($doc, $win) {
+    	var screenWidth = $win.screen.width / 2,
+    		screenHeight = $win.screen.height / 2,
+    		$elems = $doc.getElementsByClassName("elem"),
+    		validPropertyPrefix = '',
+    		otherProperty = 'perspective(1000px)',
+    		elemStyle = $elems[0].style;
+
+    	if(typeof elemStyle.webkitTransform == 'string') {
+    		validPropertyPrefix = 'webkitTransform';
+    	} else if (typeof elemStyle.MozTransform == 'string') {
+    		validPropertyPrefix = 'MozTransform';
+    	}
+
+
+    	$doc.addEventListener('mousemove', function (e) {
+    		var centroX = e.clientX - screenWidth,
+    			centroY = screenHeight - (e.clientY + 13),
+    			degX = centroX * 0.04,
+    			degY = centroY * 0.01,
+    			$elem
+
+    		for (var i = 0; i < $elems.length; i++) {
+       			$elem = $elems[i];
+    			$elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
+    		};
+    	});
+    })(document, window);
+
+
+
+
+    $('nav ul li').on('click', function(){
+    	/*here we make a variable to get the name of the clicked li*/
+    	var elementName = $(this).attr('name');
+    	$('.page.active').fadeOut(800).removeClass('active');
+    	$('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
+    });
+    </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </body>
 </html>
 <!--https://michalsnik.github.io/aos/-->

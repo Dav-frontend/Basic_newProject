@@ -15,7 +15,7 @@ body{
   -webkit-transition: 0.8s transform ease-in-out;
   transform: scale(0.5);
   -webkit-transform: scale(0.5);
-  
+
 }
 
 .page.active { opacity: 1; }
@@ -198,7 +198,7 @@ body{
 }
 
 .section-wrap {
- 
+
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: 0.8s all ease-in-out;
@@ -212,6 +212,5 @@ body{
 }
 section.active { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
 section{
-    
-}
 
+}

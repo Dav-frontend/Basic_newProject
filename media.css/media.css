@@ -27,6 +27,7 @@
     height: 3px;
   }
   .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
     transform: rotate(-45deg) translate(-5px, 4px);
   }
   #fixedBar > ul li:first-of-type {
@@ -139,7 +140,11 @@
     width: 15%;
   }
   #fixedBar > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0;
     margin: 6%;
@@ -154,7 +159,11 @@
     width: 25%;
   }
   .cd-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .cd-headline {
@@ -182,9 +191,16 @@
     height: 2px;
   }
   #implementedProjects > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    -ms-flex-line-pack: stretch;
     align-content: stretch;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     min-height: 610px;
   }
@@ -215,6 +231,7 @@
   .overflow-y-bar {
     width: 50vw;
     height: 56vw;
+    -webkit-box-shadow: 0px -5px 9px #9a9a9a inset;
     box-shadow: 0px -5px 9px #9a9a9a inset;
   }
   .overflow-y-bar > ul > li {
@@ -227,8 +244,15 @@
     /*min-height Height it's nedHelp > section*/
   }
   #needHelp section > article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
   }
@@ -285,7 +309,11 @@
     /*C++*/
   }
   #subsCribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     min-height: 600px;
     /*min-height Height it's #subsCribe*/
@@ -295,8 +323,14 @@
     /*min-height*/
   }
   .child_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   .wise_words {
@@ -375,9 +409,18 @@
     min-height: 740px;
   }
   #OurCurses > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 620px;
   }
@@ -385,8 +428,15 @@
     font-size: 1.5em;
   }
   #OurCurses > section > article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 75%;
   }
@@ -411,8 +461,14 @@
     height: 30%;
     text-align: center;
     border-radius: 0 0 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   #OurCurses > section > article > section:nth-child(2) button {
@@ -428,11 +484,18 @@
   }
   #partner section {
     width: 90%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   #partner section > section {
     width: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     overflow: hidden;
   }

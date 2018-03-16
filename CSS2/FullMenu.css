@@ -1,6 +1,13 @@
 body{
     background-color: black;
 }
+.elem{
+    margin-top: -13%;
+}
+.nav_bar > p{
+    font-size: 23px;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.33);
+}
 .wrapper {
   position:fixed;
   top: 0;
@@ -62,7 +69,7 @@ body{
   perspective: 1000px;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .navigator-on > div > ul {
@@ -212,5 +219,22 @@ body{
 }
 section.active { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
 section{
+<<<<<<< HEAD
 
+=======
+    
+}
+.find-us > a{
+    font-size: 35px;
+    color: aliceblue;
+    margin-left: 20px;
+    -webkit-transition-duration: 0.20s;
+    transition-duration: 0.20s
+}
+.find-us > a:hover{
+    font-size: 50px;
+    -webkit-transition-duration: 0.20s;
+    transition-duration: 0.20s;
+    color: red;
+>>>>>>> basic
 }

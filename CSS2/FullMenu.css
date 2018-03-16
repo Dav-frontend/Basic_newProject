@@ -95,13 +95,15 @@ body{
 .navigator-on > div > ul.active {
   transform: rotateX(0deg) scale(1.6);
   -webkit-transform: rotateX(0deg) scale(1.6);
-  opacity: 1;
+  opacity: 2;
   -webkit-transform-origin: top;
   transform-origin: top;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 1s all ease-in-out 0.5s;
   -webkit-transition: 1s all ease-in-out 0.5s;
+
+    
 }
 
 .navigator-on >div > ul > li { margin: 20px 0; }
@@ -119,7 +121,6 @@ body{
   border: none;
   outline: none;
   cursor: pointer;
-    width: 50px;
     position: absolute;
     width: 33px;
     margin-left: -20px;
@@ -234,21 +235,40 @@ section{
     transition-duration: 0.20s;
     color: red;
 }
+
+
+
+
+
+
 @media only screen and (min-width:320px) and (max-width:768px){
     .navigator-on>div > ul > li > a {
-  color: #fff;
-  font-size: 26px;
+          color: #fff;
+          font-size: 26px;
 }
     .find-us > a{
-        font-size: 25px;
+        font-size: 29px;
     }
     .find-us > a:hover{
-        font-size: 29px
+        font-size: 32px
     }
     .elem{
         margin-top: -20%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+    .menu{
+        width: 28px;
+        margin-top: -1%;
+    }
+    .menu > span{
+        height: 1px;
+    }
+    .menu > span:after, .menu > span:before{
+        height: 1px
+    }
+    #fixedBar>ul>li{
+        margin-left: 32px
     }
 }

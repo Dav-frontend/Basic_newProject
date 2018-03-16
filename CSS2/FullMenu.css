@@ -1,6 +1,9 @@
 body{
     background-color: black;
 }
+.backgroundColor.active{
+  display: none;
+}
 .elem{
     margin-top: -13%;
 }
@@ -66,7 +69,7 @@ body{
   z-index: 2;
   display: none;
   -webkit-perspective: 1000px;
-  perspective: 1000px;
+  perspective: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: crosshair;
@@ -222,7 +225,7 @@ section{
 <<<<<<< HEAD
 
 =======
-    
+
 }
 .find-us > a{
     font-size: 35px;

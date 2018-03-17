@@ -1,5 +1,9 @@
 body{
     margin: 0;
+    background-color: black;
+    background-image: url(../img/programing/logoBasick.png);
+    background-repeat: no-repeat;
+    background-position:center top;
 }
 
 li{
@@ -56,15 +60,7 @@ header>a{
      max-width: 100%;
     }
 }
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-/*clic-icon-menu--^*/
-
-//fixed menuBars
+//informational mass
 #fixedBar{
     margin-right: 2%;
     margin-top: 1%
@@ -75,7 +71,7 @@ header>a{
         font-size: 2em;
         color: @font-color_white;
         font-family: @font-family;
-        font-size: 1.7vw;
+        font-size: 1.7vw;//phone number
     }
     li:nth-last-of-type(1){
         width: 50px
@@ -100,37 +96,220 @@ header>a{
        width: 98%;
     }
 }
-/*clic-icon-menu*/
-.icon_container{
-    cursor: pointer;
+/* 
+ * style designed 3d menu for*/
+    .backgroundColor.active{
+        transition-duration: 0.40s;
+        transform: translateY(-100%);
+        transition-duration: 0.70s;
+    }
+    .container_consolidation.active{
+        filter: opacity(30%);
+        background-color: #4b4b4b;
 }
-//menu Body
-.slide-right{
-    position: absolute;
-    width: 100%;
-    background-color: black;
-    height: 100vh;
-    z-index: 2;
-    transform: translate(-100%);
-    transition: 0.80s;
-}
-.slide_Menu{
-    margin-left: 0px;
-}//js Click
+    .cd-headline.active{
+        display: none;
+    }
+    .mouse_pad.active{
+        display: none;
+    }    
+    .elem{
+        margin-top: -13%;
+    }
+    .nav_bar{
+        >p{
+        font-size: 20px;
+        color:aliceblue;
+        }
+    }
+    .wrapper {
+      position:fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: 0.8s transform ease-in-out;
+      transform: scale(0.5);
+    /*  background-color: red;*/
+    }
+    .vertical-align {
+      position: relative;
+      height: 160px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.2s all ease-in-out;
+    }
 
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 4px;
-    background-color: #333;
-    margin: 6px 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    display:block;
-    background-color: @font-color_white;
-}
-.change .bar1 {
-    transform: rotate(-45deg) translate(-6px,6px);
-}
+    .wrap {
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      transition: 0.2s all ease-in-out;
+    }
+    .page .wrap p {
+      font-size: 18px;
+      margin: 20px auto;
+      width: 70%;
+      letter-spacing: 1px;
+    }
+    .navigator-on {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      height: 100vh;
+      z-index: 2;
+      perspective: 100%;
+      transform-style: preserve-3d;
+        >div>ul{
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              margin: auto;
+              width: 300px;
+              height: 360px;
+              transform: rotateX(180deg) scale(0);
+              transform-origin: top;
+              opacity: 0;
+              transform-style:preserve-3d;
+              transition: 1s all ease-in-out 0s;
+              width: 50%;
+              height: 104vh;/**/
+            >li{
+                margin: 20px 0;
+                >a{
+                   color: #fff;
+                   font-size: 40px;
+                   letter-spacing: 3px;
+                   background-color:rgba(0, 0, 0, 0.15)
+                }
+                >a:hover{
+                    color: @font-color_red
+                }
+            }
+        }
+    }
+    .navigator-on > div > ul.active {
+      transform: rotateX(0deg) scale(1.6);
+      opacity: 2;
+      transform-origin: top;
+      transform-style: preserve-3d;
+      transition: 1s all ease-in-out 0.5s;
+    }
+
+//style button
+    .menu {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+        position: absolute;
+        width: 33px;
+        margin-left: -20px;
+        height: 33px;
+        padding-left: 3px;
+    }
+    
+    .menu:before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        color: rgba(255,255,255,0.5);
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding: 5px
+    }
+
+    .menu.active:before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        color: rgba(255,255,255,0.5);
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .menu > span {
+        height: 2px;
+        background: #fff;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: 0.2s all ease-in-out;
+    }
+    .menu > span:after, .menu > span:before {
+      content: "";
+      height: 2px;
+      background: #fff;
+      display: block;
+      width: 100%;
+      position: absolute;
+      -webkit-transition: 0.2s top ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out;
+      transition: 0.2s top ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out;
+      transition: 0.2s top ease-in-out 0.2s, transform 0.2s ease-in-out;
+      transition: 0.2s top ease-in-out 0.2s, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+      -webkit-transition: 0.2s top ease-in-out 0.2s, transform 0.2s ease-in-out;
+    }
+    .menu > span:after { top: -10px; }
+
+    .menu > span:before { top: 10px; }
+
+    .menu.active > span { background: transparent; }
+    .menu.active span:before, .menu.active span:after {
+      -webkit-transition: 0.2s top ease-in-out, -webkit-transform 0.2s ease-in-out 0.2s;
+      transition: 0.2s top ease-in-out, -webkit-transform 0.2s ease-in-out 0.2s;
+      transition: 0.2s top ease-in-out, transform 0.2s ease-in-out 0.2s;
+      transition: 0.2s top ease-in-out, transform 0.2s ease-in-out 0.2s, -webkit-transform 0.2s ease-in-out 0.2s;
+      -webkit-transition: 0.2s top ease-in-out, transform 0.2s ease-in-out 0.2s;
+    }
+    .menu.active span:after {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    .menu.active span:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    .section-wrap {
+      transform-style: preserve-3d;
+      transition: 0.8s all ease-in-out;
+    }
+    .section-wrap.active {
+      opacity: 0.5;
+        //opactity ..//'ss
+      transform: scale(0.5);
+    }
+    section.active{ 
+     transform: rotateX(0deg); transform: rotateX(0deg); 
+        
+    }
+    .find-us > a{
+        font-size: 35px;
+        color: aliceblue;
+        margin-left: 20px;
+        transition-duration: 0.20s;
+        //icon Facebook,twiter..
+    }
+    .find-us > a:hover{
+        font-size: 50px;
+        transition-duration: 0.20s;
+        color: #880101
+    }    
 
 //----------animated-headline we teach Programing
 #type_writer {
@@ -218,7 +397,6 @@ header>a{
 .container_consolidation{
     height: 100vh;
     width: 100%;
-    outline: 1px solid black
 }
 #OurCurses{
     display: flex;
@@ -794,8 +972,5 @@ footer {
           font-size: 1vw;
       }
     }
-  }
-  >section:nth-of-type(2){
-
   }
 }

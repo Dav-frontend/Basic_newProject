@@ -1,15 +1,29 @@
 body{
     background-color: black;
+    background-image: url(../img/programing/logoBasick.png);
+    background-repeat: no-repeat;
+    background-position:center top;
 }
 .backgroundColor.active{
-  display: none;
+    transition-duration: 0.40s;
+    transform: translateY(-100%);
+    transition-duration: 0.70s;
+}
+.container_consolidation.active{
+    filter: opacity(30%);
+    background-color: #4b4b4b
+}
+.cd-headline.active{
+    display: none
+}
+.mouse_pad.active{
+    display: none;
 }
 .elem{
     margin-top: -13%;
 }
 .nav_bar > p{
     font-size: 23px;
-    border-bottom: 1px solid rgba(180, 180, 180, 0.33);
 }
 .wrapper {
   position:fixed;
@@ -18,17 +32,12 @@ body{
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transition: 0.8s -webkit-transform ease-in-out;
-  transition: 0.8s -webkit-transform ease-in-out;
   transition: 0.8s transform ease-in-out;
-  transition: 0.8s transform ease-in-out, 0.8s -webkit-transform ease-in-out;
-  -webkit-transition: 0.8s transform ease-in-out;
   transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-
+/*  background-color: red;*/
 }
 
-.page.active { opacity: 1; }
+/*.page.active { opacity: 1; }*/
 
 .vertical-align {
   position: relative;
@@ -38,6 +47,8 @@ body{
   transform: translateY(-50%);
   transition: 0.2s all ease-in-out;
   -webkit-transition: 0.2s all ease-in-out;
+   
+   
 }
 
 .wrap {
@@ -46,14 +57,15 @@ body{
   text-align: center;
   transition: 0.2s all ease-in-out;
   -webkit-transition: 0.2s all ease-in-out;
+    
 }
 
 .page .wrap p {
   font-size: 18px;
   margin: 20px auto;
   width: 70%;
-  opacity: .5;
   letter-spacing: 1px;
+    
 }
 
 .navigator-on {
@@ -73,6 +85,7 @@ body{
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: crosshair;
+    
 }
 
 .navigator-on > div > ul {
@@ -92,19 +105,22 @@ body{
   transform-style:preserve-3d;
   -webkit-transition: 1s all ease-in-out 0s;
   transition: 1s all ease-in-out 0s;
-
+    width: 50%;
+    height: 104vh;/**/
 }
 
 .navigator-on > div > ul.active {
   transform: rotateX(0deg) scale(1.6);
   -webkit-transform: rotateX(0deg) scale(1.6);
-  opacity: 1;
+  opacity: 2;
   -webkit-transform-origin: top;
   transform-origin: top;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   transition: 1s all ease-in-out 0.5s;
   -webkit-transition: 1s all ease-in-out 0.5s;
+
+
 }
 
 .navigator-on >div > ul > li { margin: 20px 0; }
@@ -122,7 +138,6 @@ body{
   border: none;
   outline: none;
   cursor: pointer;
-    width: 50px;
     position: absolute;
     width: 33px;
     margin-left: -20px;
@@ -213,7 +228,7 @@ body{
   transform-style: preserve-3d;
   -webkit-transition: 0.8s all ease-in-out;
   transition: 0.8s all ease-in-out;
-    opacity: none}
+    }
 
 .section-wrap.active {
     opacity: 0.5;
@@ -222,9 +237,6 @@ body{
 }
 section.active { -webkit-transform: rotateX(0deg); transform: rotateX(0deg); }
 section{
-<<<<<<< HEAD
-
-=======
 
 }
 .find-us > a{
@@ -239,18 +251,23 @@ section{
     -webkit-transition-duration: 0.20s;
     transition-duration: 0.20s;
     color: red;
->>>>>>> basic
 }
+
+
+
+
+
+
 @media only screen and (min-width:320px) and (max-width:768px){
     .navigator-on>div > ul > li > a {
-  color: #fff;
-  font-size: 26px;
+          color: #fff;
+          font-size: 26px;
 }
     .find-us > a{
-        font-size: 25px;
+        font-size: 29px;
     }
     .find-us > a:hover{
-        font-size: 29px
+        font-size: 32px
     }
     .elem{
         margin-top: -20%;
@@ -258,4 +275,19 @@ section{
         display: -ms-flexbox;
         display: flex;
     }
+    .menu{
+        width: 27px;
+        margin-top: -1%;
+    }
+    .menu > span{
+        height: 1px;
+    }
+    .menu > span:after, .menu > span:before{
+        height: 1px
+    }
+    #fixedBar>ul>li{
+        margin-left: 32px
+    }
 }
+}
+

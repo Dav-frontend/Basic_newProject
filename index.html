@@ -13,7 +13,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
-
     <script src="css/less.min.js"></script>
     <script src="js/modernizr.js"></script>
 
@@ -348,6 +347,10 @@
       $('nav ul').removeClass('active');
       $('nav').delay(800).fadeOut('slow');
       setTimeout(function() {
+        $('.mouse_pad').removeClass('active')
+        $('.cd-headline').removeClass('active')
+        $('.container_consolidation').removeClass('active');
+        $('.backgroundColor').removeClass('active');
         $('.menu').removeClass('active');
         $('.section-wrap,body').removeClass('active');
         $('.backgroundColor').removeClass('active');
@@ -359,14 +362,16 @@
       $('nav ul').addClass('active');
       $('.section-wrap,body').addClass('active');
       $('.backgroundColor').addClass('active');
-    }
+    } $('.container_consolidation').addClass('active');
+      $('.cd-headline').addClass('active')
+      $('.mouse_pad').addClass('active')
     });
 
     /*MOUSEMOVE TRANSFORM 3D*/
 
     !(function ($doc, $win) {
-    	var screenWidth = $win.screen.width / 2,
-    		screenHeight = $win.screen.height / 2,
+    	var screenWidth = $win.screen.width / 1,
+    		screenHeight = $win.screen.height / 5,
     		$elems = $doc.getElementsByClassName("elem"),
     		validPropertyPrefix = '',
     		otherProperty = 'perspective(1000px)',

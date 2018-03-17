@@ -24,14 +24,7 @@
     header > a img {
       max-width: 90%;
     }
-    .bar1,
-    .bar2,
-    .bar3{
-        width: 30px;
-        height: 3px
-    }
-      .change .bar1 {
-      transform: rotate(-45deg) translate(-5px, 4px);}
+
     #fixedBar > ul li:first-of-type{
         font-size: 1.2em;
     }
@@ -116,14 +109,10 @@
     }
 
 //    section4 Coment none
-    
-    //datark
-//------------------------------^
-    
-    
-    
+
+
 //    section5 "aphorisms" +form
-    
+
     #subsCribe > section > h2 {
         font-size: 2.3vw;
     }
@@ -142,7 +131,7 @@
             }
         }
       }
-    
+
     #userContact > input {
         height: 44px;
     }
@@ -150,7 +139,7 @@
        font-size: 1.9vw;
        margin-top: 2%;
     }
- 
+
     .be_informed{
         >h3{
             font-size: 1.6vw;
@@ -165,17 +154,17 @@
 
 @media only screen and (min-width:320px) and (max-width:768px){
     /*Child section Width end Height*/
-    
- /*                   */
-    .child_section{
-        width: 91.1%;
-        height: 100vh;
-    }
-/*                    */  
-    
+
+               /*                   */
+                  .child_section{
+                      width: 91.1%;
+                      height: 100vh;
+                  }
+              /*                    */
+
 /*style Header: text Animation*/
     header>a{
-        width: 22%;
+        width: 20%;
         >nav>ul>li{
             width: 15%
         }
@@ -185,22 +174,27 @@
             display: flex;
             justify-content: center;
             padding: 0;
-            margin: 6%;
-            >li{
-                margin-left: 20px;
-            }>li:first-child{
+            margin: 4%;
+            >li:first-child{
                 display: none;
             }>li:last-child{
-                width: 25%;
+                width: 16%;
             }
         }
     }
+    .search{
+        width: 16%
+    }
+    //menu button end .menu body style
+
     .cd-intro{
         display: flex;
-        justify-content: center
+        justify-content: center;
+        margin: 0
     }
     .cd-headline{
             text-align: center;
+            margin: 0;
         >span:first-child{
             font-size: 2rem
         }>span:last-child{
@@ -216,58 +210,51 @@
        width: 98%;
     }
 }
-    .bar1,
-    .bar2,
-    .bar3{
-        width: 30px;
-        height: 2px
-    }
-
-    
 //section 2 scroll-list + Raket
-    
     #implementedProjects > section{
        display: flex;
         flex-direction:column-reverse;
-        align-content:stretch;
-        justify-content: space-around;
-        min-height: 610px;
+        align-content:center;
+        justify-content: center;
+        min-height: 655px;
     }
-    
+
     #dottedCubic{
-        width: 50vw;
-        height: 55vw;
+        width: 200px;
+        height: 54vw;
+        border: 1px dotted #ffffff;
         >legend>article{
-            width: 38vw;
+            width: 30vw;
         }
     }
     .text_container {
         height:60%;
         >h2{
-            font-size: 3.5vw;
+            font-size: 3.4vw;
         }
         >span{
             width: 40%;
         }
         >p{
-            font-size: 2.6vw;
+            font-size: 2.4vw;
             width: 45vw;
+            font-weight: 100;
+            margin:6% 0% 6% 0%;
         }
         >button{
-            font-size: 2.5vw;
-            margin-top: -3vw
+            font-size: 2.4vw;
         }
     }
     .overflow-y-bar{
-        width: 50vw;
-        height: 56vw;
-        box-shadow: 0px -5px 9px #9a9a9a inset;   
+        width: 300px;
+        height: 55vw;
+        box-shadow: 0px -5px 9px #9a9a9a inset;
         >ul>li{
-            font-size: 2.6vw;
+            font-size: 2.4vw;
             line-height: 5vw
         }
     }
-    
+
 //seection3  nedHelp
     #needHelp section{
         background-size: 78%;
@@ -333,9 +320,9 @@
         left: 35%;
         /*C++*/
     }
-    
+
 //section 4 ? loading
-    
+
 //section 5 aphorisms Albert :)
     #subsCribe{
         display: flex;
@@ -368,7 +355,7 @@
                 font-size: 2.4vw;
                 padding-top: 4%;
             }
-        }  
+        }
     }
 
      #subsCribe > section > h2{
@@ -376,7 +363,7 @@
         margin: 0;
         padding: 0
     }
-    
+
      #userContact > input{
        width: 64%;
        padding: 0;
@@ -387,7 +374,7 @@
         height: 6.6vw;
         font-size: 3.4vw;
     }
-    
+
     #userContact > span{
         width: 64%;
     }
@@ -418,16 +405,16 @@
         text-align: center;
         font-size: 17px;
     }
-    
+
 }//.
 @media only screen and (min-width:320px) and (max-width:768px){
   // section2 Our Curses
-    
+
     .mouse_pad > a{
     position: absolute;
     bottom: 0;
     left: 49%;
-    
+
     img{
        width: 1.7rem;
     }

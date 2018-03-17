@@ -266,7 +266,7 @@ section{
     .navigator-on>div > ul > li > a {
           color: #fff;
           font-size: 26px;
-}
+    }
     .find-us > a{
         font-size: 29px;
     }
@@ -280,17 +280,14 @@ section{
         display: flex;
     }
     .menu{
-        width: 27px;
-        margin-top: -1%;
+        width: 28px;
+        margin-top: -0.5%;
     }
     .menu > span{
         height: 1px;
     }
     .menu > span:after, .menu > span:before{
         height: 1px
-    }
-    #fixedBar>ul>li{
-        margin-left: 32px
     }
 }
 }

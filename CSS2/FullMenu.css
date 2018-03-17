@@ -34,7 +34,11 @@ body{
   margin: auto;
   transition: 0.8s transform ease-in-out;
   transform: scale(0.5);
+  display: none;
 /*  background-color: red;*/
+}
+.wrapper.active{
+  display: block;
 }
 
 /*.page.active { opacity: 1; }*/
@@ -47,8 +51,8 @@ body{
   transform: translateY(-50%);
   transition: 0.2s all ease-in-out;
   -webkit-transition: 0.2s all ease-in-out;
-   
-   
+
+
 }
 
 .wrap {
@@ -57,7 +61,7 @@ body{
   text-align: center;
   transition: 0.2s all ease-in-out;
   -webkit-transition: 0.2s all ease-in-out;
-    
+
 }
 
 .page .wrap p {
@@ -65,7 +69,7 @@ body{
   margin: 20px auto;
   width: 70%;
   letter-spacing: 1px;
-    
+
 }
 
 .navigator-on {
@@ -85,7 +89,7 @@ body{
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   cursor: crosshair;
-    
+
 }
 
 .navigator-on > div > ul {
@@ -290,4 +294,3 @@ section{
     }
 }
 }
-

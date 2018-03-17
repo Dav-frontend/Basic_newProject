@@ -347,6 +347,7 @@
       $('nav ul').removeClass('active');
       $('nav').delay(800).fadeOut('slow');
       setTimeout(function() {
+        $('wrapper').removeClass('active');
         $('.mouse_pad').removeClass('active')
         $('.cd-headline').removeClass('active')
         $('.container_consolidation').removeClass('active');
@@ -363,8 +364,9 @@
       $('.section-wrap,body').addClass('active');
       $('.backgroundColor').addClass('active');
     } $('.container_consolidation').addClass('active');
-      $('.cd-headline').addClass('active')
-      $('.mouse_pad').addClass('active')
+      $('.cd-headline').addClass('active');
+      $('.mouse_pad').addClass('active');
+      $('.wrapper').addClass('active');
     });
 
     /*MOUSEMOVE TRANSFORM 3D*/

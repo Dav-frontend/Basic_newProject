@@ -336,7 +336,6 @@ section.active {
 .find-us > a:hover {
   font-size: 50px;
   transition-duration: 0.20s;
-  color: #880101;
 }
 #type_writer {
   height: 100vh;

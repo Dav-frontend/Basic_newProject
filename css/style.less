@@ -96,7 +96,7 @@ header>a{
        width: 98%;
     }
 }
-/* 
+/*
  * style designed 3d menu for*/
     .backgroundColor.active{
         transition-duration: 0.40s;
@@ -112,7 +112,7 @@ header>a{
     }
     .mouse_pad.active{
         display: none;
-    }    
+    }
     .elem{
         margin-top: -13%;
     }
@@ -189,9 +189,6 @@ header>a{
                    letter-spacing: 3px;
                    background-color:rgba(0, 0, 0, 0.15)
                 }
-                >a:hover{
-                    color: @font-color_red
-                }
             }
         }
     }
@@ -202,6 +199,57 @@ header>a{
       transform-style: preserve-3d;
       transition: 1s all ease-in-out 0.5s;
     }
+
+    // style menu a hover
+          .ij-effect-1 > ul > li a {
+              outline: none;
+              color: #fff;
+              text-decoration: none;
+              letter-spacing: 1px;
+              text-shadow: 0 0 1px rgba(255,255,255,0.3);
+              font-size: 1.35em;
+              }
+
+              .ij-effect-1> ul > li a:hover,
+              .ij-effect-1 > ul > li a:focus {
+              outline: none;
+              }
+
+              .ij-effect-1> ul > li a::before,
+              .ij-effect-1> ul > li a::after {
+              display: inline-block;
+              opacity: 0;
+              -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+              -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+              transition: transform 0.3s, opacity 0.2s;
+              }
+
+              .ij-effect-1> ul > li a::before {
+              margin-right: 10px;
+              content: '[';
+              -webkit-transform: translateX(20px);
+              -moz-transform: translateX(20px);
+              transform: translateX(20px);
+              }
+
+              .ij-effect-1> ul > li a::after {
+              margin-left: 10px;
+              content: ']';
+              -webkit-transform: translateX(-20px);
+              -moz-transform: translateX(-20px);
+              transform: translateX(-20px);
+              }
+
+              .ij-effect-1 > ul > li a:hover::before,
+              .ij-effect-1 > ul > li a:hover::after,
+              .ij-effect-1 > ul > li a:focus::before,
+              .ij-effect-1 > ul > li a:focus::after {
+              opacity: 1;
+              -webkit-transform: translateX(0px);
+              -moz-transform: translateX(0px);
+              transform: translateX(0px);
+              }
+    // ------
 
 //style button
     .menu {
@@ -215,7 +263,7 @@ header>a{
         height: 33px;
         padding-left: 3px;
     }
-    
+
     .menu:before {
         content: "";
         position: absolute;
@@ -294,9 +342,9 @@ header>a{
         //opactity ..//'ss
       transform: scale(0.5);
     }
-    section.active{ 
-     transform: rotateX(0deg); transform: rotateX(0deg); 
-        
+    section.active{
+     transform: rotateX(0deg); transform: rotateX(0deg);
+
     }
     .find-us > a{
         font-size: 35px;
@@ -309,7 +357,7 @@ header>a{
         font-size: 50px;
         transition-duration: 0.20s;
         color: #880101
-    }    
+    }
 
 //----------animated-headline we teach Programing
 #type_writer {
@@ -364,9 +412,9 @@ header>a{
     font-weight: 100;
 }
 .cd-headline > span:first-of-type{
-    color:@font-color_white;    
+    color:@font-color_white;
     font-weight: 100
-} 
+}
 .cd-headline.slide b.is-visible {
   top: 0;
   opacity: 1;
@@ -537,7 +585,7 @@ header>a{
     align-items: center;
     min-height: 650px;
 
-    >section{   
+    >section{
     display: flex;
     justify-content:space-between;
     align-items: center;

@@ -38,17 +38,17 @@
        <nav role="navigation" class="navigator-on">
           <div class="elem" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
           <ul class="nav_bar">
-          
+
           <p>BASIC</p>
           <li><a href="https://it-center.am/?lang=hy">Main page</a></li>
           <li><a href="https://it-center.am/courses/?lang=hy">Courses</a></li>
           <li><a href="https://it-center.am/contact?lang=hy">Contact Us</a></li>
-          
+
           <p>INFORMATIONAL</p>
           <li><a href="https://it-center.am/about?lang=hy">About us</a></li>
           <li><a href="http://www.hr.am/company/profile/cid/432402236863/t/">Projects</a></li>
           <li><a href="http://www.hr.am/company/profile/cid/432402236863/t/">Jobs</a></li>
-        
+
           <p>FOLLOW US</p>
           <span class="find-us">
           <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -69,7 +69,7 @@
         <source src="video/Background.mp4">
    </video>
                        <!-- Background-Video---^-->
-    
+
     <section id="type_writer" class="section-wrap page about">
         <!--text Anmation type writer-->
         <section class="cd-intro">
@@ -180,7 +180,7 @@
               <img class='programing6'src="img/programing/HTML.png" alt="HTML">
               <img class='programing7'src="img/programing/C++.png" alt="C++">
           </article>
-          
+
            <section class="child_section">
                  <article>
                    <span><h2>&#8859;Need Hell?</h2></span>
@@ -192,9 +192,9 @@
                  </article>
            </section>
        </section>
-       
-       
-       
+
+
+
        <section class="container_consolidation section-wrap page about">
            <section class="child_section">
 
@@ -211,8 +211,8 @@
                            <h2>Creativity is contagious<br> pass it on</h2>
                             <span>Albert Einshtein</span>
                        </article>
-                   </article> 
-                   
+                   </article>
+
            <h2>SUBSCRIPTION</h2>
            <!--form area-->
            <form action="" id="userContact">
@@ -321,12 +321,14 @@
       $('nav ul').removeClass('active');
       $('nav').delay(0).fadeOut('slow');
       setTimeout(function() {
+        $('wrapper').removeClass('active');
         $('.mouse_pad').removeClass('active')
         $('.cd-headline').removeClass('active')
         $('.container_consolidation').removeClass('active');
         $('.backgroundColor').removeClass('active');
         $('.menu').removeClass('active');
         $('.section-wrap,body').removeClass('active');
+        $('.backgroundColor').removeClass('active');
        }, 800);
     } else {
     	$('.menu').addClass('active');
@@ -336,8 +338,9 @@
       $('.section-wrap,body').addClass('active');
       $('.backgroundColor').addClass('active');
     } $('.container_consolidation').addClass('active');
-      $('.cd-headline').addClass('active')
-      $('.mouse_pad').addClass('active')
+      $('.cd-headline').addClass('active');
+      $('.mouse_pad').addClass('active');
+      $('.wrapper').addClass('active');
     });
 
     /*MOUSEMOVE TRANSFORM 3D*/
@@ -372,7 +375,7 @@
     })(document, window);
 //with mouse movement the text changes its position
 
-        
+
 
 
     $('nav ul li').on('click', function(){

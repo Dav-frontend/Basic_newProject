@@ -122,7 +122,11 @@ header > a img {
   margin: auto;
   transition: 0.8s transform ease-in-out;
   transform: scale(0.5);
+  display: none;
   /*  background-color: red;*/
+}
+.wrapper.active {
+  display: block;
 }
 .vertical-align {
   position: relative;

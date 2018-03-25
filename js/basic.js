@@ -1,4 +1,4 @@
-var timer = 4000;
+var timer = 5000;
 
 var i = 0;
 var max = $('#c > a').length;

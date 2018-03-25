@@ -953,7 +953,6 @@ footer > section:nth-of-type(1) form button {
   position: relative;
   width: 80%;
   height: 50px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #c > a {
@@ -969,6 +968,6 @@ footer > section:nth-of-type(1) form button {
 #c > a > img {
   width: auto;
 }
-.active {
+#c > a.active {
   opacity: 1;
 }

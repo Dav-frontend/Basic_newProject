@@ -19,6 +19,7 @@
   /*style Header: text Animation*/
   header > a img {
     max-width: 90%;
+    margin-left: 12%;
   }
   #fixedBar > ul li:first-of-type {
     font-size: 1.2em;
@@ -197,6 +198,7 @@
     width: 45vw;
     font-weight: 100;
     margin: 6% 0% 6% 0%;
+    margin: 22px auto;
   }
   .text_container > button {
     font-size: 2.4vw;
@@ -204,7 +206,6 @@
   .overflow-y-bar {
     width: 300px;
     height: 55vw;
-    box-shadow: 0px -5px 9px #9a9a9a inset;
   }
   .overflow-y-bar > ul > li {
     font-size: 2.4vw;
@@ -352,6 +353,9 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  header > a img {
+    max-width: 81px;
+  }
   .mouse_pad > a {
     position: absolute;
     bottom: 0;
@@ -359,6 +363,25 @@
   }
   .mouse_pad > a img {
     width: 1.7rem;
+  }
+  .menu {
+    width: 25px;
+    height: 22px;
+    margin-left: -15px;
+  }
+  .menu > span,
+  .menu span:after,
+  .menu span:before {
+    height: 1px;
+  }
+  .navigator-on > div > ul > li {
+    margin: 10px auto;
+  }
+  .navigator-on > div > ul > li > a {
+    font-size: 29px;
+  }
+  .navigator-on > div > ul {
+    width: 290px;
   }
   #OurCurses {
     min-height: 740px;

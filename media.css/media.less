@@ -23,6 +23,7 @@
         /*style Header: text Animation*/
     header > a img {
       max-width: 90%;
+      margin-left: 12%
     }
 
     #fixedBar > ul li:first-of-type{
@@ -240,6 +241,7 @@
             width: 45vw;
             font-weight: 100;
             margin:6% 0% 6% 0%;
+            margin: 22px auto
         }
         >button{
             font-size: 2.4vw;
@@ -248,7 +250,6 @@
     .overflow-y-bar{
         width: 300px;
         height: 55vw;
-        box-shadow: 0px -5px 9px #9a9a9a inset;
         >ul>li{
             font-size: 2.4vw;
             line-height: 5vw
@@ -409,7 +410,9 @@
 }//.
 @media only screen and (min-width:320px) and (max-width:768px){
   // section2 Our Curses
-
+      header > a img{
+        max-width: 81px
+    }
     .mouse_pad > a{
     position: absolute;
     bottom: 0;
@@ -419,6 +422,25 @@
        width: 1.7rem;
     }
 }
+    //menu icon style icon
+    .menu{
+        width: 25px;
+        height: 22px;
+        margin-left: -15px;
+        >span,span:after,span:before{
+            height: 1px;
+        }
+    }
+        .navigator-on > div > ul > li {
+        margin: 10px auto;
+    }
+    .navigator-on > div > ul > li > a{
+        font-size: 29px;
+       
+    }
+    .navigator-on > div > ul{
+        width: 290px;
+    }
   #OurCurses{
       min-height: 740px;
       >section{

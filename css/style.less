@@ -911,37 +911,54 @@ header>a{
         font-family: @font-family;
     }
     //facebook buuton
-    >button{
-          display: inline-block;
-          height: 43px;
-          line-height: 42px;
-          padding-left: 48px;
-          position: relative;
-          background-color: #3b5998;
-          color: #ffffff;
-          letter-spacing: 1px;
-          border: none;
-          border-radius: 6px;
-          font-size: 12px;
-          cursor: pointer;
-          -webkit-box-shadow: 1px 1px 1px black;
-          box-shadow: 1px 1px 1px  #1f376a;
-
-        span{
-          position: absolute;
-          left: 0;
-          width: 40px;
-          background-color: #3b5998;
-          border-top-left-radius: 6px;
-          border-bottom-left-radius: 6px;
-          border-right: 1px solid rgba(0, 0, 0, 0.15);
-          font-size: 23px;
-            i{
-                  font-size: 55px;
-            }
-        }
-    }
 }
+
+.myButt {
+  outline: none;
+  border: none;
+  padding: 0.8rem 0.9rem 0.8rem 0.9rem;
+  display: block;
+  cursor: pointer;
+  font-size: 80%;
+  background-color: #3b5998;
+  position: relative;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.four {
+  overflow: hidden;
+}
+.four span {
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.four .icon {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  color: #fff;
+  padding: 0.6rem 0.6rem 1rem 0.9rem;
+  background-color: #324d86;
+  transition: all 0.3s ease;
+  font-size: 150%;
+}
+.four:hover .icon {
+  left: 0px;
+}
+.four:hover span {
+  margin-left: 2.2rem;
+}
+
+
+
 
 #partner{
   background-color: #ffffff;

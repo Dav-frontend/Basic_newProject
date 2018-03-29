@@ -97,14 +97,14 @@
             </h1>
         </section>
             <article class="mouse_pad">
-                <a href="#page1"><img src="img/logo/mouse.png" alt=""></a>
+                <a href="javascript://O" onclick="mouseScroll ('#OurCurses')"><img src="img/logo/mouse.png" alt=""></a>
             </article>
     </section>
 
                                <!--Become a developer-->
 
        <section id="OurCurses" class="container_consolidation section-wrap page about" >
-          <section class="child_section" id="page1">
+          <section class="child_section">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
               <section>
@@ -364,6 +364,14 @@
 <!-- slider logo -->
 
     <script>
+    function mouseScroll(id){
+        var offset = 0;
+        $('html,body').animate({
+          scrollTop: $(id).offset ().top - offset
+        },1000)
+        return false
+    }
+
     //3d Vertival menu
     $('.menu, nav').click(function(){
     if ($('.menu').hasClass('active')) {

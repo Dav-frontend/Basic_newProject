@@ -347,17 +347,14 @@
   header > a img {
     max-width: 81px;
   }
-  .mouse_pad > a:first-child {
+  .mouse_pad > a {
     position: absolute;
     bottom: 0;
     left: 49%;
     display: block;
   }
-  .mouse_pad > a:first-child img {
+  .mouse_pad > a img {
     width: 1.7rem;
-  }
-  .icon-scroll {
-    display: none;
   }
   .menu {
     width: 25px;

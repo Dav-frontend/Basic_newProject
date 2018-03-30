@@ -22,10 +22,16 @@
    <script src="JavaScript/Animated.js"></script>
    <script>new WOW().init();</script>
 
+   <!-- slider logo -->
+    <link rel="stylesheet" href="SliderCSS/owl.carousel.min.css">
+
+<script src="Slider/jquery.min.js"></script>
+<script src="Slider/owl.carousel.js"></script>
 </head>
 <body>
    <header >
-       <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
+
+     <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
        <span id="fixedBar">
            <ul>
                <li><span onclick="x()">+374 11 65 99 88</span></li>
@@ -92,14 +98,20 @@
             </h1>
         </section>
             <article class="mouse_pad">
-                <a href="#page1"><img src="img/logo/mouse.png" alt=""></a>
+                   <!--touch mobile-->
+                <a href="javascript://O" onclick="mouseScroll ('#OurCurses')"><img src="img/logo/mouse.png" alt=""></a>
+                  <!------------------------------->
+
+                  <!---->
+                <a href="javascript://O" onclick="mouseScroll ('#OurCurses')" class='icon-scroll'></a>
+                  <!---->
             </article>
     </section>
 
                                <!--Become a developer-->
 
        <section id="OurCurses" class="container_consolidation section-wrap page about" >
-          <section class="child_section" id="page1">
+          <section class="child_section">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
               <section>
@@ -309,6 +321,7 @@
              </div>
            </section>
 
+
                                    <!-- footer -->
             <footer>
               <section>
@@ -319,7 +332,6 @@
                       <li><a href=" ">Contact Us</a></li>
                     </ul>
                   </nav>
-
                   <nav>
                     <ul>
                       <li><a href=" ">About Us</a></li>
@@ -352,9 +364,20 @@
 
      <script src="js/basic.js"></script>
 
-
-
+<!-- slider logo -->
+<script src="Slider/app.js"></script>
+<script src="Slider/highlight.js"></script>
+<!-- slider logo -->
+<!---->
     <script>
+    function mouseScroll(id){
+        var offset = 0;
+        $('html,body').animate({
+          scrollTop: $(id).offset ().top - offset
+        },1000)
+        return false
+    }
+
     //3d Vertival menu
     $('.menu, nav').click(function(){
     if ($('.menu').hasClass('active')) {

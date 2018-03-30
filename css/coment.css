@@ -1,13 +1,23 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .container_consolidation.coment_student{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .intro {
@@ -118,27 +128,27 @@ time {
 }
 /*student foto*/
 .timeline ul .student1.in-view::after {
-  background-image: url(.img/img student foto/girl-left.png);
+  background-image: url(../img/student/girl-left.png);
   background-size: cover;
     z-index: 5;
     /*foto*/
 }
 .timeline ul .student2.in-view::after {
-  background-image: url(lobby_bot_3.png);
+  background-image: url(../img/student/kiss.png);
   background-size: cover;
     z-index: 5;
     /*foto*/
 }
 
 .timeline ul .student3.in-view::after {
-  background-image: url(kiss.png);
+  background-image: url(../img/student/lobby_bot_1.png);
   background-size: cover;
     z-index: 5
     /*foto*/
 }
 
 .timeline ul .student4.in-view::after {
-  background-image: url(girl-left.png);
+  background-image: url(../img/student/lobby_bot_3.png);
   background-size: cover;
     z-index: 5
     /*foto*/

@@ -4,7 +4,7 @@
 
   // define variables
   var items = document.querySelectorAll(".timeline li");
-  var scrolle = document.querySelector(".scrolle")
+  var scrolle = document.querySelector(".scrolle");
 
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
@@ -30,5 +30,4 @@
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   scrolle.addEventListener("scroll", callbackFunc);
-
 })();

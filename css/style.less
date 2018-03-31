@@ -6,12 +6,8 @@ body{
     background-position:center top;
 }
 
-li{
-   list-style: none;
-}
-a{
-    text-decoration: none
-}
+li{list-style: none;}
+a{text-decoration: none;}
 h1 ,h2 ,h3,h4,a,li,p,span,button {
   font-family: 'Nunito', sans-serif;
 }
@@ -35,6 +31,10 @@ h1 ,h2 ,h3,h4,a,li,p,span,button {
     height: 89.3%;
     //Child Element Width end Height
 }
+.container_consolidation{
+    height: 100vh;
+    width: 100%;
+} //Parent Element Width end Height
 video[loop]{
     min-width: 100%;
     min-height: 100%;
@@ -44,14 +44,15 @@ video[loop]{
     bottom: 0;
     right: 0;
     z-index: -1999;
-    -webkit-filter:brightness(80%) blur(5px)
-}//background-vido
+}   //background-vido
+
+//---------- section1 {header}
 header{
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  z-index: 1999
+  z-index: 1999;
 }
 header>a{
     margin-left: 2%;
@@ -61,7 +62,7 @@ header>a{
      max-width: 100%;
     }
 }
-//informational mass
+//informational
 #fixedBar{
     margin-right: 2%;
     margin-top: 1%
@@ -84,7 +85,6 @@ header>a{
         max-width: 100%;
     }
 }
-
 .content{
     min-width: 638px;
 }
@@ -121,14 +121,12 @@ header>a{
   margin-left: -2px;
   top: 6px;
   border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
 }
 @-webkit-keyframes scroll {
+  //cursor Animation
   0% {
     opacity: 1;
   }
@@ -148,8 +146,9 @@ header>a{
             transform: translateY(46px);
   }
 }
+//MENU
 /*
- * style designed 3d menu for*/
+ * style designed for 3d menu*/
     .backgroundColor.active{
         transition-duration: 0.40s;
         transform: translateY(-100%);
@@ -256,7 +255,7 @@ header>a{
       transition: 1s all ease-in-out 0.5s;
     }
 
-    // style menu a hover
+    // style menu text[list] 'a' hover [----text-----]
           .ij-effect-1 > ul > li a {
               outline: none;
               color: #fff;
@@ -316,11 +315,22 @@ header>a{
       border: none;
       outline: none;
       cursor: pointer;
+      position: absolute;
+      width: 33px;
+      margin-left: -20px;
+      height: 33px;
+      padding-left: 3px;
+      >span{
+        height: 2px;
+        background: #fff;
+        display: block;
+        width: 100%;
         position: absolute;
-        width: 33px;
-        margin-left: -20px;
-        height: 33px;
-        padding-left: 3px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: 0.2s all ease-in-out;
+      }
     }
 
     .menu:before {
@@ -347,18 +357,7 @@ header>a{
         font-size: 10px;
         letter-spacing: 1px;
     }
-    .menu > span {
-        height: 2px;
-        background: #fff;
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        transition: 0.2s all ease-in-out;
-    }
-//animation menu X =-
+//animation menu X=
     .menu > span:after, .menu > span:before {
       content: "";
       height: 2px;
@@ -411,20 +410,20 @@ header>a{
         color: aliceblue;
         margin-left: 20px;
         transition-duration: 0.20s;
-        //icon Facebook,twiter..
+        //icon Facebook,twiter,Instagram..
     }
     .find-us > a:hover{
         font-size: 50px;
         transition-duration: 0.20s;
     }
-
-//----------animated-headline We teach Programing
+/*
+ *animated-headline We teach Programing*/
 #type_writer {
   height: 100vh;
   justify-content: center;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100%;//body type_writer
 }
 .cd-intro {
     width: 90%;
@@ -499,13 +498,9 @@ header>a{
     -webkit-transform: translateY(0);
   }
 }
+//-------------------end section1{header}
 
-//---------------------------
-
-.container_consolidation{
-    height: 100vh;
-    width: 100%;
-}
+//----------_Section2_
 #OurCurses{
     display: flex;
     justify-content: center;
@@ -634,11 +629,11 @@ header>a{
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+//----------------------end Section2
 
 
 
-
-//implementedProjects section2
+//implementedProjects section3
 #implementedProjects{
     display: flex;
     justify-content: center; /*<---Parent Element*/
@@ -742,8 +737,10 @@ header>a{
             cursor: pointer;
         }
 }
-//implementedProjects
 
+//-------------------end Section3
+
+//-------------------Section4
 #needHelp{
     display: flex;
     justify-content: center;
@@ -800,45 +797,218 @@ header>a{
 
 .floating_img > img{
     position: absolute;
+    //logo programing
 }
 .floating_img > img:nth-child(1){
     top: 17.8%;
     left: 14%;
-    width:  5.8%
+    width: 5.8%;
+    //Andriod
 }
 .floating_img > img:nth-child(2){
     bottom: 18%;
     left: 18%;
     width: 5%;
+    //C
 }
 .floating_img > img:nth-child(3){
     left: 35.3%;
     top: 41.5%;
-    width: 4.3%
+    width: 4.3%;
+    //CSS
 }
 .floating_img > img:nth-child(4){
     bottom: 6%;
     right: 27.5%;
-    width: 7.3%
+    width: 7.3%;
+    //PHP
 }
 .floating_img > img:nth-child(5){
     top: 10%;
     right: 25%;
-    width: 5.4%
+    width: 5.4%;
+    //Python
 }
 .floating_img > img:nth-of-type(6){
     right: 23%;
     bottom: 34%;
-    width: 4.3%
+    width: 4.3%;
+    //HTML
 }
 .floating_img > img:nth-of-type(7){
     right: 13.4%;
     bottom: 15%;
-    width: 5%
+    width: 5%;
+    //C++
+}
+//------------ end Section4
+
+
+//students' opinions section5
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-//subscribe to our site
+.container_consolidation.coment_student{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  padding: 100px 0;
+}
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.scrolle{
+  width: 70%;
+  height: 98vh;
+  overflow-x:hidden;
+}
+.scrolle::-webkit-scrollbar {
+  width: 0em;//scroll bar none
+}
+.timeline ul {
+    padding: 50px 0;
+
+    li{
+      list-style-type: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: rgba(23 ,19, 19,0.43);
+      color: #fff;
+
+      div{
+        position: relative;
+        border-radius: 10px;
+        bottom: 0;
+        width: 300px;
+        padding:8px;
+        background: rgba(49 ,49, 49,0.29);//text Container
+      }
+      div::before{
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+
+    }
+    li::after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -14px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: inherit; //student img
+    }
+}
+.timeline ul li:nth-child(odd) div {
+  left: 56px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgba(49 ,49, 49,0.29) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -430px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgba(49 ,49, 49,0.29);
+}
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  -webkit-transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out;
+}
+/*student foto*/
+.timeline ul .student1.in-view::after {
+  background-image: url(../img/student/girl-left.png);
+  background-size: cover;
+    z-index: 5;
+    /*foto*/
+}
+.timeline ul .student2.in-view::after {
+  background-image: url(../img/student/kiss.png);
+  background-size: cover;
+    z-index: 5;
+    /*foto*/
+}
+
+.timeline ul .student3.in-view::after {
+  background-image: url(../img/student/lobby_bot_1.png);
+  background-size: cover;
+    z-index: 5
+    /*foto*/
+}
+
+.timeline ul .student4.in-view::after {
+  background-image: url(../img/student/lobby_bot_3.png);
+  background-size: cover;
+    z-index: 5
+    /*foto*/
+}
+/*student foto*/
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  -webkit-transform: translate3d(200px, 0, 0);
+  transform: translate3d(200px, 0, 0);
+}
+.timeline ul li:nth-child(even) div{
+  left: -350px;
+}
+.timeline ul li:nth-child(even) div {
+  -webkit-transform: translate3d(-200px, 0, 0);
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  -webkit-transform: none;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+//---------- end Section5
+
+//-subscribe to our site  Section6
 #subsCribe{
     display: flex;
     justify-content: center;
@@ -1007,10 +1177,10 @@ header>a{
 .four:hover span {
   margin-left: 2.2rem;
 }
+//-------end Section6
 
 
-
-
+//cooperating companies Section6  50/50
 #partner{
   background-color: #ffffff;
   height: 50vh;
@@ -1022,54 +1192,197 @@ header>a{
     height: 100%;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
       width: 90%;
   >section{
     width: 100%;
-    >article{
-        height:10%;
-        margin-top: 2%;
-      >article {
-        height: 100%;
-        >a > img{
-            height: 100%;
-            width: 100%;
-        }
-      }
-    }
   }
-   h2{
-    text-align: center;
-    margin: 20px 0;
-    font-size:2vw
-   }
-
-    >.partners1{
-         display: flex;
-         justify-content: space-between;
-        article{
-          width: 15%;
-        }
-    }
-    >.partners2{
-      display: flex;
-      justify-content: space-around;
-      article:nth-of-type(1){
-        width: 5.9%;
-      }
-      article:nth-of-type(2){
-        width: 20%;
-      }
-      article:nth-of-type(3){
-        width: 18%;
-      }
-      article:nth-of-type(4){
-        width: 8.8%;
-      }
-    }
   }
 
 }
+
+//slider logo partner
+/**
+ * Owl Carousel v2.3.3
+ */
+ .owl-carousel,
+ .owl-carousel .owl-item {
+     -webkit-tap-highlight-color: transparent;
+     position: relative
+ }
+
+ .owl-carousel {
+     display: none;
+     width: 100%;
+     z-index: 1
+ }
+
+ .owl-carousel .owl-stage {
+     position: relative;
+     -ms-touch-action: pan-Y;
+     touch-action: manipulation;
+     -moz-backface-visibility: hidden
+ }
+
+ .owl-carousel .owl-stage:after {
+     content: ".";
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0
+ }
+
+ .owl-carousel .owl-stage-outer {
+     position: relative;
+     overflow: hidden;
+     -webkit-transform: translate3d(0, 0, 0)
+ }
+
+ .owl-carousel .owl-item,
+ .owl-carousel .owl-wrapper {
+     -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+     -ms-backface-visibility: hidden;
+     -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+     -ms-transform: translate3d(0, 0, 0)
+ }
+
+ .owl-carousel .owl-item {
+     min-height: 1px;
+     display: inline-block;
+     -webkit-backface-visibility: hidden;
+     -webkit-touch-callout: none;
+     text-align: center;
+ }
+
+ .owl-carousel .owl-item img {
+     display: inline-flex;
+     max-width: 100%;
+     height: 40px;
+ }
+
+ .owl-carousel .owl-dots.disabled,
+ .owl-carousel .owl-nav.disabled {
+     display: none
+ }
+
+ .no-js .owl-carousel,
+ .owl-carousel.owl-loaded {
+     display: inline-flex
+ }
+
+ .owl-carousel .owl-dot,
+ .owl-carousel .owl-nav .owl-next,
+ .owl-carousel .owl-nav .owl-prev {
+     cursor: pointer;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none
+ }
+
+ .owl-carousel .owl-nav button.owl-next,
+ .owl-carousel .owl-nav button.owl-prev,
+ .owl-carousel button.owl-dot {
+     background: 0 0;
+     color: inherit;
+     border: none;
+     padding: 0!important;
+     font: inherit
+ }
+
+ /* .owl-carousel.owl-loading {
+     opacity: 0;
+     display: block
+ } */
+
+ .owl-carousel.owl-hidden {
+     opacity: 0
+ }
+
+ .owl-carousel.owl-refresh .owl-item {
+     visibility: hidden
+ }
+
+ .owl-carousel.owl-drag .owl-item {
+     -ms-touch-action: none;
+     touch-action: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none
+ }
+
+ .owl-carousel.owl-grab {
+     cursor: move;
+     cursor: grab
+ }
+
+ .owl-carousel.owl-rtl {
+     direction: rtl
+ }
+
+ .owl-carousel.owl-rtl .owl-item {
+     float: right
+ }
+
+ .owl-carousel .animated {
+     animation-duration: 1s;
+     animation-fill-mode: both
+ }
+
+ .owl-carousel .owl-animated-in {
+     z-index: 0
+ }
+
+ .owl-carousel .owl-animated-out {
+     z-index: 1
+ }
+
+ .owl-carousel .fadeOut {
+     animation-name: fadeOut
+ }
+
+ @keyframes fadeOut {
+     0% {
+         opacity: 1
+     }
+     100% {
+         opacity: 0
+     }
+ }
+
+ .owl-height {
+     transition: height .5s ease-in-out
+ }
+
+ .owl-carousel .owl-item .owl-lazy {
+     opacity: 0;
+     transition: opacity .4s ease
+ }
+
+
+
+
+
+ .owl-carousel .owl-video-tn {
+     opacity: 0;
+     height: 100%;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     transition: opacity .4s ease
+ }
+
+ .owl-carousel .owl-video-frame {
+     position: relative;
+     z-index: 1;
+     height: 100%;
+     width: 100%
+ }
+
 
 footer {
   display: flex;

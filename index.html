@@ -6,19 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic IT Center</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/part.css">
-    <link rel="stylesheet" href="css/style.less">
-    <link rel="stylesheet" href="media.css/media.less">
     <link rel="stylesheet" href="media.css/media.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/coment.css">
     <script src="JavaScript2/jquery.min.js"></script>
-         <script src="JavaScript2/owl.carousel.js"></script>
+    <script src="JavaScript2/owl.carousel.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
-    <script src="css/less.min.js"></script>
 
    <link rel="stylesheet" href="CSS2/FullMenu.css">
    <script src="JavaScript/Animated.js"></script>
@@ -458,7 +453,7 @@
     $('.menu, nav').click(function(){
     if ($('.menu').hasClass('active')) {
       $('nav ul').removeClass('active');
-      $('nav').delay(0).fadeOut('slow');
+      $('nav').delay(800).fadeOut('slow');
       setTimeout(function() {
         $('.wrapper').removeClass('active');
         $('.mouse_pad').removeClass('active');
@@ -468,13 +463,13 @@
         $('.menu').removeClass('active');
         $('.section-wrap,body').removeClass('active');
         $('.backgroundColor').removeClass('active');
-       }, 800);
+      }, 800);
     } else {
     	$('.menu').addClass('active');
       $('nav').fadeIn('slow');
       $('nav').addClass('active');
       $('nav ul').addClass('active');
-      $('.section-wrap,body').addClass('active');
+      $('.section-wrap').addClass('active');
       $('.backgroundColor').addClass('active');
     } $('.container_consolidation').addClass('active');
       $('.cd-headline').addClass('active');
@@ -485,8 +480,8 @@
     /*MOUSEMOVE TRANSFORM 3D*/
 
     !(function ($doc, $win) {
-    	var screenWidth = $win.screen.width / 1,
-    		screenHeight = $win.screen.height / 5,
+    	var screenWidth = $win.screen.width / 2,
+    		screenHeight = $win.screen.height / 2,
     		$elems = $doc.getElementsByClassName("elem"),
     		validPropertyPrefix = '',
     		otherProperty = 'perspective(1000px)',
@@ -502,7 +497,7 @@
     	$doc.addEventListener('mousemove', function (e) {
     		var centroX = e.clientX - screenWidth,
     			centroY = screenHeight - (e.clientY + 13),
-    			degX = centroX * 0.0,
+    			degX = centroX * 0.000,
     			degY = centroY * 0.01,
     			$elem
 

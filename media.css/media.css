@@ -112,6 +112,12 @@
   .be_informed > p {
     font-size: 1.4vw;
   }
+  footer > section:nth-of-type(1) {
+    width: 70%;
+  }
+  footer section:nth-of-type(2) span {
+    font-size: 1.3vw;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   /*Child section Width end Height*/
@@ -341,6 +347,18 @@
   .four .icon {
     padding: 0.4rem 0.5rem 0.2rem 0.8rem;
   }
+  #last {
+    height: 60vh;
+  }
+  footer {
+    height: 10vh;
+  }
+  footer > section:nth-of-type(1) {
+    display: none;
+  }
+  footer > section:nth-of-type(2) span {
+    font-size: 2vw;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   header > a img {
@@ -449,40 +467,5 @@
     min-width: 100px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .timeline ul li {
-    font-size: 0.9rem;
-  }
-  .timeline ul li div {
-    width: 205px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -255px;
-    /*250+45-6*/
-  }
-  .timeline ul li::after {
-    width: 70px;
-    height: 70px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-  .timeline ul li::after {
-    width: 70px;
-    height: 70px;
-  }
-  .timeline ul li {
-    margin-left: 40px;
-    font-size: 0.8rem;
-  }
-  .timeline ul li div {
-    width: calc(60vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 55px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent rgba(23, 19, 19, 0.43) transparent transparent;
-  }
-}
+
+/* sdasdasdas */

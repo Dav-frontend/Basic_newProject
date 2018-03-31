@@ -120,7 +120,20 @@
 
 
 //    section4 Coment none
-  
+.timeline ul li {
+   font-size: 0.9rem
+}
+.timeline ul li div {
+width: 205px;
+}
+.timeline ul li:nth-child(even) div {
+left: -255px;
+/*250+45-6*/
+}
+.timeline ul li::after{
+width: 70px;
+height: 70px;
+}
 
 //    section5 "aphorisms" +form
 
@@ -344,6 +357,26 @@
         /*C++*/
     }
 
+    .timeline ul li::after{
+      width: 70px;
+      height: 70px;
+    }
+    .timeline ul li {
+      margin-left: 40px;
+      font-size: 0.8rem
+    }
+    .timeline ul li div {
+      // width: calc(60vw - 91px);
+       width: ~"calc(60vw - 91px)";
+    }
+    .timeline ul li:nth-child(even) div {
+      left: 55px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent rgba(23 ,19, 19,0.43);
+  }
 //section 4 ? loading
 
 //section 5 aphorisms Albert :)

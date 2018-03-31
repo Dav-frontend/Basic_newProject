@@ -768,6 +768,19 @@ section.active {
   bottom: 15%;
   width: 5%;
 }
+.about_us {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+.about_us > h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.about_us > h3 {
+  font: 1.2rem;
+  font-weight: 100;
+}
 *,
 *::before,
 *::after {
@@ -1067,6 +1080,11 @@ time {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#partner > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  color: black;
 }
 #partner section {
   width: 57%;

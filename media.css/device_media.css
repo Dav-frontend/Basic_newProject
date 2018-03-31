@@ -22,6 +22,12 @@
   @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
     .child_section{
       width: 80%;
-      height: 50%;
+      height: 60%;
+    }
+    .section-wrap{
+      height: 80vh;
+    }
+    footer{
+      height: 30vh;
     }
   }

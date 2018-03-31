@@ -1083,7 +1083,7 @@ time {
 }
 #partner > h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: black;
 }
 #partner section {
@@ -1156,6 +1156,7 @@ time {
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
   display: inline-flex;
+  margin-top: 4.5rem;
 }
 .owl-carousel .owl-dot,
 .owl-carousel .owl-nav .owl-next,

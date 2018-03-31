@@ -770,7 +770,7 @@ section.active {
 }
 .about_us {
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #fff;
 }
 .about_us > h1 {
@@ -1080,6 +1080,11 @@ time {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#partner > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  color: black;
 }
 #partner section {
   width: 57%;

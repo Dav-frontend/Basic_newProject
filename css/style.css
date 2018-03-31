@@ -768,6 +768,19 @@ section.active {
   bottom: 15%;
   width: 5%;
 }
+.about_us {
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+.about_us > h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.about_us > h3 {
+  font: 1.2rem;
+  font-weight: 100;
+}
 *,
 *::before,
 *::after {

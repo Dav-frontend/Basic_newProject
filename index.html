@@ -2,30 +2,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Basic IT Center</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic IT Center</title>
-     <link rel="icon" href="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-30/306250363840_89eb824ebe5f9a3730f6_34.png" sizes="16x16">
+    <link rel="icon" href="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-30/306250363840_89eb824ebe5f9a3730f6_34.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="media.css/media.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="media.css/device_media.css">
     <script src="JavaScript2/jquery.min.js"></script>
     <script src="JavaScript2/owl.carousel.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
-
-   <link rel="stylesheet" href="CSS2/FullMenu.css">
-   <script src="JavaScript/Animated.js"></script>
-   <script>new WOW().init();</script>
-
-   <!-- slider logo -->
-    <link rel="stylesheet" href="SliderCSS/owl.carousel.min.css">
-
-<script src="Slider/jquery.min.js"></script>
-<script src="Slider/owl.carousel.js"></script>
+    <script src="JavaScript/Animated.js"></script>
+    <script>new WOW().init();</script>
 </head>
 <body>
    <header id="scrollsdown">
@@ -125,7 +117,10 @@
               <section>
                 <article>
                   <h3>Java programming course</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus scelerisque mauris, ac viverra lacus sodales sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a consectetur eros, eu viverra tellus.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                    rhoncus scelerisque mauris, ac viverra lacus sodales sed. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Suspendisse a consectetur eros,
+                    eu viverra tellus.</p>
                 </article>
                 <button>Singin up</button>
               </section>
@@ -202,7 +197,7 @@
                        <h2 class="wow fadeInDown">Let's Clarify The Right Coding </h2>
                        <h2 class="wow fadeIn">Language For You!</h2>
                    </span>
-                   <button id="GetStarted" class="wow pulse">Get Started</button>
+                   <button id="GetStarted" class="pulse-button-hover">Get Started</button>
                  </article>
            </section>
        </section>
@@ -383,10 +378,12 @@
                 </button> -->
                 <!--Facebook follow link -->
 
-                <button class='myButt four'>
-<div class='icon'><i class="fab fa-facebook-f"></i></div>
-  <span>Follow us on Facebook</span>
-</button>
+                    <button class='myButt four'>
+                    <div class='icon'>
+                      <i class="fab fa-facebook-f">
+                      </i></div>
+                      <span>Follow us on Facebook</span>
+                   </button>
              </article>
            </section>
        </section>
@@ -462,29 +459,22 @@
                   </form>
               </section>
               <section>
-                  <span>© 2015 - 2018 All rights reserved | Made with ♥ by "Basic IT Center" studentsv</span>
+                  <span>© 2015 - 2018 All rights reserved | Made with
+                        <span class="myHeart">
+                        <svg class="heart" viewBox="0 0 35 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+	                       c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                        </svg></span> by "Basic IT Center" studentsv</span>
               </section>
             </footer>
        </section>
        <script src="JavaScript2/highlight.js"></script>
        <script src="JavaScript2/app.js"></script>
        <script src="JavaScript/index.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-    <script src="js/modernizr.js"></script>
+       <script src="js/modernizr.js"></script>
+       <script src="js/main.js"></script>
+       <script src="js/basic.js"></script>
 
-    <script src="js/main.js"></script>
-
-
-     <script src="JavaScript/Animated.js"></script>
-
-
-     <script src="js/basic.js"></script>
-
-<!-- slider logo -->
-<script src="Slider/app.js"></script>
-<script src="Slider/highlight.js"></script>
-<!-- slider logo -->
-<!---->
     <script>
     function mouseScroll(id){
         var offset = 0;
@@ -498,7 +488,7 @@
           function scrollFunction() {
               if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                   let headerBgColor = document.getElementById("scrollsdown")
-                  headerBgColor.style.backgroundColor = '#2f2e2e75';
+                  headerBgColor.style.backgroundColor = '#2f2e2e30';
                   headerBgColor.style.transitionDuration = '0.50s';
               }else{
                   document.getElementById("scrollsdown").style.background = 'none'
@@ -573,8 +563,6 @@
     	$('.page.active').fadeOut(800).removeClass('active');
     	$('.page.'+elementName).delay(1000).fadeIn(1000).addClass('active');
     });
-
-
     </script>
 </body>
 </html>

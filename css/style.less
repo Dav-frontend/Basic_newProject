@@ -45,6 +45,9 @@ video[loop]{
     bottom: 0;
     right: 0;
     z-index: -1999;
+    filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13) ;
+  -webkit-filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13) ;
+  -moz-filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13)
 }   //background-vido
 
 //---------- section1 {header}
@@ -794,7 +797,6 @@ header>a{
     border-radius: 8px;
     margin-top: 9.5%;
     cursor: pointer
-
 }
 
 .floating_img > img{
@@ -1538,6 +1540,33 @@ footer {
 
   }
 }
+/*centering the Heart Animation and text*/
+.myHeart{
+  font-size: 1em;
+}
+
+/* Adding style to the Heart Animation*/
+.heart {
+  fill: #ff0000;
+  position: relative;
+  top: 0.1em;
+  width: 1em;
+  animation: pulse 1s ease infinite;
+}
+
+/* Creating the heartbeat effect*/
+@keyframes pulse {
+  0% {
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      transform: scale3d(1.3, 1.1, 1.05);
+  }
+  100% {
+      transform: scale3d(1, 1, 1);
+  }
+}
+
 // body::-webkit-scrollbar-track
 // {
 // 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);

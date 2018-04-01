@@ -10,6 +10,7 @@ li{list-style: none;}
 a{text-decoration: none;}
 h1 ,h2 ,h3,h4,a,li,p,span,button {
   font-family: 'Nunito', sans-serif;
+  outline: none;
 }
 @bg-color_white: #eeeeee;
 @font-color_white:#ffffff;
@@ -54,6 +55,7 @@ header{
   width: 100%;
   z-index: 1999;
 }
+
 header>a{
     margin-left: 2%;
     margin-top: 2%;
@@ -103,7 +105,7 @@ header>a{
 .icon-scroll,
 .icon-scroll:before {
   position: absolute;
-  left: 50%;
+  left: 49%;
   bottom: 6px;
 }
 .icon-scroll {
@@ -969,29 +971,92 @@ time {
 }
 /*student foto*/
 .timeline ul .student1.in-view::after {
-  background-image: url(../img/student/girl-left.png);
+  background-image: url(../img/student/Arpine.png);
   background-size: cover;
+    background-position: center;
     z-index: 5;
     /*foto*/
 }
 .timeline ul .student2.in-view::after {
-  background-image: url(../img/student/kiss.png);
+  background-image: url(../img/student/Davit.jpg);
   background-size: cover;
+    background-position: center;
     z-index: 5;
     /*foto*/
 }
 
 .timeline ul .student3.in-view::after {
-  background-image: url(../img/student/lobby_bot_1.png);
+  background-image: url(../img/student/Elen.jpg);
   background-size: cover;
-    z-index: 5
+    z-index: 5;
+    background-position: center;
     /*foto*/
 }
 
 .timeline ul .student4.in-view::after {
-  background-image: url(../img/student/lobby_bot_3.png);
+  background-image: url(../img/student/Vazgen.jpg);
   background-size: cover;
     z-index: 5
+    /*foto*/
+}
+.timeline ul .student5.in-view::after {
+  background-image: url(../img/student/Ani.jpg);
+  background-size: cover;
+    z-index: 5
+    /*foto*/
+}
+.timeline ul .student6.in-view::after {
+  background-image: url(../img/student/Mari.jpg);
+  background-size: cover;
+    z-index: 5
+    /*foto*/
+}
+.timeline ul .student7.in-view::after {
+  background-image: url(../img/student/Gor.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center
+    /*foto*/
+}
+.timeline ul .student8.in-view::after {
+  background-image: url(../img/student/Tigran.jpg);
+  background-size: cover;
+    z-index: 5;
+    /*foto*/
+}
+.timeline ul .student9.in-view::after {
+  background-image: url(../img/student/Narek.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center;
+    /*foto*/
+}
+.timeline ul .student10.in-view::after {
+  background-image: url(../img/student/Mariam.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center;
+    /*foto*/
+}
+.timeline ul .student11.in-view::after {
+  background-image: url(../img/student/Vahe.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center;
+    /*foto*/
+}
+.timeline ul .student12.in-view::after {
+  background-image: url(../img/student/Yana.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center;
+    /*foto*/
+}
+.timeline ul .student13.in-view::after {
+  background-image: url(../img/student/Rob.jpg);
+  background-size: cover;
+    z-index: 5;
+    background-position: center;
     /*foto*/
 }
 /*student foto*/
@@ -1081,15 +1146,18 @@ time {
   //aphorisms 1
 }
 .slideshow2{
-  background-color: orange
+  background-image: url(../img/aphorisms/Montaigne.jpg);
+  background-size: cover;
   //aphorisms 2
 }
 .slideshow3{
-  background-color: black;
+  background-image: url(../img/aphorisms/BernardShows.jpg);
+  background-size: cover;
   //aphorisms 3
 }
 .slideshow4{
-  background-color: black;
+  background-image: url(../img/aphorisms/SteveJobs.jpg);
+  background-size: cover;
   //aphorisms 4
 }
 
@@ -1199,13 +1267,15 @@ time {
   >h2{
     font-family: @font-family;
     font-size: 1.5rem;
-    color: black;
+    color: #544e4e;
+    padding-bottom: 3%;
   }
   background-color: #ffffff;
   height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   section{
     width: @hidth_Child_section;
     height: 100%;
@@ -1289,7 +1359,6 @@ time {
  .no-js .owl-carousel,
  .owl-carousel.owl-loaded {
      display: inline-flex;
-     margin-top: 4.5rem
  }
 
  .owl-carousel .owl-dot,
@@ -1469,3 +1538,26 @@ footer {
 
   }
 }
+// body::-webkit-scrollbar-track
+// {
+// 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+// 	border-radius: 10px;
+// 	background-color: #dbd3d3;
+// }
+//
+// body::-webkit-scrollbar
+// {
+// 	width: 12px;
+// 	background-color: #F5F5F5;
+// }
+//
+// body::-webkit-scrollbar-thumb
+// {
+// 	border-radius: 10px;
+// 	background-color: #D62929;
+// 	background-image: -webkit-linear-gradient(90deg,
+// 											  transparent,
+// 											  rgba(0, 0, 0, 0.4) 50%,
+// 											  transparent,
+// 											  transparent)
+// }

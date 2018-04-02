@@ -135,13 +135,15 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   /*Child section Width end Height*/
-  /*                   */
+  /*
+                    */
   .child_section {
     width: 91.1%;
     height: 100vh;
   }
   /*                    */
   /*style Header: text Animation*/
+
   header > a {
     width: 20%;
   }

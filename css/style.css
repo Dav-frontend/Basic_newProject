@@ -874,6 +874,7 @@ section.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 700px;
 }
 .intro {
   padding: 100px 0;

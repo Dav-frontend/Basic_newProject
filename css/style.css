@@ -5,6 +5,7 @@ body {
   background-image: url(../img/programing/logoBasick.png);
   background-repeat: no-repeat;
   background-position: center top;
+
 }
 li {
   list-style: none;
@@ -36,6 +37,7 @@ button {
 .container_consolidation {
   height: 100vh;
   width: 100%;
+  min-width: 320px;
 }
 video[loop] {
   min-width: 100%;

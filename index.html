@@ -15,7 +15,9 @@
     <script src="JavaScript2/owl.carousel.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
+    <!--partnors-->
     <script src="svg-with-js/fontawesome-all.js"></script>
+    <!--partnors-->
     <script src="JavaScript/Animated.js"></script>
     <script>new WOW().init();</script>
 </head>
@@ -27,41 +29,12 @@
                <li><span onclick="x()">+374 11 65 99 88</span></li>
                <li class="search"><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
                <li onclick="myFunction(this)" class="icon_container">
-               <button class="menu"><span></span></button>
+            
                </li>
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
        </span>
-    <div class="wrapper">
-      <!--vertical 3d menu body-->
-       <nav role="navigation" class="navigator-on">
-          <div class="elem ij-effect-1" style="transform: perspective(1000px) rotateY(0deg) rotateX(0deg);">
-          <ul class="nav_bar">
 
-          <p>BASIC</p>
-          <li><a href="https://it-center.am/?lang=hy">Main page</a></li>
-          <li><a href="https://it-center.am/courses/?lang=hy">Courses</a></li>
-          <li><a href="https://it-center.am/contact?lang=hy">Contact Us</a></li>
-
-          <p>INFORMATIONAL</p>
-          <li><a href="https://it-center.am/about?lang=hy">About us</a></li>
-          <li><a href="http://www.hr.am/company/profile/cid/432402236863/t/">Projects</a></li>
-          <li><a href="http://www.hr.am/company/profile/cid/432402236863/t/">Jobs</a></li>
-
-          <p>FOLLOW US</p>
-          <span class="find-us">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-linkedin"></i></a>
-          </span>
-            <!--Follow us-->
-         </ul>
-         </div>
-    <section class="backgroundColor">
-    </section>
-  </nav>
-</div>
    </header>
 
 
@@ -70,7 +43,7 @@
    </video>
                        <!-- Background-Video-^-->
 
-    <section id="type_writer" class="section-wrap page about">
+    <section id="type_writer">
         <!--text Anmation type writer-->
         <section class="cd-intro">
             <h1 class="cd-headline slide">
@@ -100,7 +73,7 @@
 
                                <!--Become a developer-->
 
-       <section id="OurCurses" class="container_consolidation section-wrap page about" >
+       <section id="OurCurses" class="container_consolidation" >
           <section class="child_section">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
@@ -149,7 +122,7 @@
        </section>
 
       
-<section class="container_consolidation section-wrap page about" id="implementedProjects">
+<section class="container_consolidation" id="implementedProjects">
 
 <section class="child_section">
 <div id="myVerticalCarousel" class="vertical-carousel" data-urlLock="false" data-rests-indicators="#navbar-collapse li">
@@ -295,7 +268,7 @@
 </section>
 </section>
 
-       <section class="container_consolidation section-wrap page about" id="needHelp">
+       <section class="container_consolidation" id="needHelp">
           <article class="floating_img">
               <img class='programing1'src="img/programing/Android.png" alt="Android">
               <img class='programing2'src="img/programing/C.png" alt="C#">
@@ -320,7 +293,7 @@
 
 
 
-       <section class="container_consolidation section-wrap page about coment_student">
+       <section class="container_consolidation coment_student">
          <section class="about_us">
            <h1>Our graduates about us</h1>
            <h3>More than 200 positive opinions</h3>
@@ -438,7 +411,7 @@
        </section>
 
                            <!--subscribe to our site-->
-       <section class="container_consolidation section-wrap page about" id="subsCribe">
+       <section class="container_consolidation" id="subsCribe">
            <section class="child_section">
 
                     <!--slider aphorisms-->
@@ -512,7 +485,7 @@
        </section>
 
                        <!--OUR PARTNERS-->
-       <section id="last" class="container_consolidation section-wrap page about">
+       <section id="last" class="container_consolidation">
            <section id="partner">
               <h2>OUR PARTNERS</h2>
              <div class="owl-carousel owl-theme">
@@ -591,6 +564,7 @@
               </section>
             </footer>
        </section>
+    
        <script src="JavaScript2/highlight.js"></script>
        <script src="JavaScript2/app.js"></script>
        <script src="JavaScript/index.js"></script>
@@ -630,63 +604,9 @@ _gaq.push(['_trackPageview']);
               }
           }
     //3d Vertival menu
-    $('.menu, nav').click(function(){
-    if ($('.menu').hasClass('active')) {
-      $('nav ul').removeClass('active');
-      $('nav').delay(800).fadeOut('slow');
-      setTimeout(function() {
-        $('.wrapper').removeClass('active');
-        $('.mouse_pad').removeClass('active');
-        $('.cd-headline').removeClass('active');
-        $('.container_consolidation').removeClass('active');
-        $('.backgroundColor').removeClass('active');
-        $('.menu').removeClass('active');
-        $('.section-wrap,body').removeClass('active');
-        $('.backgroundColor').removeClass('active');
-      }, 800);
-    } else {
-    	$('.menu').addClass('active');
-      $('nav').fadeIn('slow');
-      $('nav').addClass('active');
-      $('nav ul').addClass('active');
-      $('.section-wrap').addClass('active');
-      $('.backgroundColor').addClass('active');
-    } $('.container_consolidation').addClass('active');
-      $('.cd-headline').addClass('active');
-      $('.mouse_pad').addClass('active');
-      $('.wrapper').addClass('active');
-    });
-
-    /*MOUSEMOVE TRANSFORM 3D*/
-
-    !(function ($doc, $win) {
-    	var screenWidth = $win.screen.width / 2,
-    		screenHeight = $win.screen.height / 2,
-    		$elems = $doc.getElementsByClassName("elem"),
-    		validPropertyPrefix = '',
-    		otherProperty = 'perspective(1000px)',
-    		elemStyle = $elems[0].style;
-
-    	if(typeof elemStyle.webkitTransform == 'string') {
-    		validPropertyPrefix = 'webkitTransform';
-    	} else if (typeof elemStyle.MozTransform == 'string') {
-    		validPropertyPrefix = 'MozTransform';
-    	}
 
 
-    	$doc.addEventListener('mousemove', function (e) {
-    		var centroX = e.clientX - screenWidth,
-    			centroY = screenHeight - (e.clientY + 13),
-    			degX = centroX * 0.000,
-    			degY = centroY * 0.01,
-    			$elem
-
-    		for (var i = 0; i < $elems.length; i++) {
-       			$elem = $elems[i];
-    			$elem.style[validPropertyPrefix] = otherProperty + 'rotateY('+ degX +'deg)  rotateX('+ degY +'deg)';
-    		};
-    	});
-    })(document, window);
+   
 //with mouse movement the text changes its position
 
 

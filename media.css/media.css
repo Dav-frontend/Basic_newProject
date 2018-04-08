@@ -42,8 +42,62 @@
   #OurCurses > section > article section:nth-child(2) > article p {
     font-size: 0.7em;
   }
+  #implementedProjects {
+    min-height: 640px;
+  }
+  #implementedProjects > section {
+    width: 85%;
+    height: 89.3%;
+  }
+  .vertical-carousel-indicators {
+    top: 10%;
+    left: 3%;
+  }
+  .vertical-carousel-indicators > li {
+    font-size: 0.9rem;
+    padding: 13px 0px 13px 0px;
+  }
+  .vertical-carousel-indicators > li.active {
+    font-size: 1rem;
+    padding: 20px 0px 20px 0px;
+  }
+  .item > fieldset {
+    width: 290px;
+    height: 300px;
+    margin-left: 51%;
+    margin-top: 12%;
+    border-radius: 18px;
+  }
+  .item > fieldset > legend > div {
+    width: 180px;
+  }
+  .item > fieldset > legend > div > img {
+    width: 60px;
+  }
+  .text_container {
+    text-align: center;
+    height: 60%;
+  }
+  .text_container > h2 {
+    font-size: 1.2rem;
+  }
+  .text_container > span {
+    width: 7rem;
+    height: 1px;
+  }
+  .text_container > p {
+    width: 16rem;
+    margin: 10% auto;
+    font-size: 0.9rem;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    line-height: 1rem;
+  }
+  .text_container > button {
+    font-size: 0.7rem;
+  }
   #needHelp > section > article:first-child > span {
-    font-size: 1.6vw;
+    font-size: 0.7rem;
   }
   #needHelp > section > article:last-of-type > span {
     font-size: 2.2vw;

@@ -366,13 +366,13 @@ header>a{
 
 //implementedProjects section3
 
-              #implementedProjects{
+#implementedProjects{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 650px;
       >section{
-        width: 71%;
+        width: 78%;
         height: 89.3%;
         min-height: 596px;
     }
@@ -403,7 +403,7 @@ header>a{
     border-radius: 18px;
     >legend{
       >div{
-         width: 250px;
+         width: 180px;
          >img{
            width: 65px;
          }
@@ -476,11 +476,11 @@ header>a{
       color: #ffffff;
     }
     .vertical-carousel-box {
-      -webkit-transition: transform 600ms;
-      -moz-transition: transform 600ms;
-      -ms-transition: transform 600ms;
-      -o-transition: transform 600ms;
-      transition: transform 600ms;
+      -webkit-transition: transform 500ms;
+      -moz-transition: transform 500ms;
+      -ms-transition: transform 500ms;
+      -o-transition: transform 500ms;
+      transition: transform 500ms;
     }
 
     #myVerticalCarousel {
@@ -1144,187 +1144,73 @@ time {
 
 }
 
-//slider logo partner
+
+#main-content {
+  width:80%;
+}
+#main-content img {
+  max-width: 95%;
+}
 /**
- * Owl Carousel v2.3.3
- */
- .owl-carousel,
- .owl-carousel .owl-item {
-     -webkit-tap-highlight-color: transparent;
-     position: relative
- }
+ * CSS style for carouselTicker
+ **/
 
- .owl-carousel {
-     display: none;
-     width: 100%;
-     z-index: 1
- }
+.carouselTicker__list{
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
 
- .owl-carousel .owl-stage {
-     position: relative;
-     -ms-touch-action: pan-Y;
-     touch-action: manipulation;
-     -moz-backface-visibility: hidden
- }
+.carouselTicker__item{
+    margin: 0 0 0 5px;
+    float: left;
+    border: 2px solid black;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
 
- .owl-carousel .owl-stage:after {
-     content: ".";
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0
- }
+.carouselTicker__loader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
- .owl-carousel .owl-stage-outer {
-     position: relative;
-     overflow: hidden;
-     -webkit-transform: translate3d(0, 0, 0)
- }
+/**
+ * CSS style for vertical direction
+ **/
 
- .owl-carousel .owl-item,
- .owl-carousel .owl-wrapper {
-     -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-     -ms-backface-visibility: hidden;
-     -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-     -ms-transform: translate3d(0, 0, 0)
- }
+.carouselTicker_vertical .carouselTicker__list{
+    margin: 0;
+}
 
- .owl-carousel .owl-item {
-     min-height: 1px;
-     display: inline-block;
-     -webkit-backface-visibility: hidden;
-     -webkit-touch-callout: none;
-     text-align: center;
- }
-
- .owl-carousel .owl-item img {
-     display: inline-flex;
-     max-width: 100%;
-     height: 40px;
- }
-
- .owl-carousel .owl-dots.disabled,
- .owl-carousel .owl-nav.disabled {
-     display: none
- }
-
- .no-js .owl-carousel,
- .owl-carousel.owl-loaded {
-     display: inline-flex;
- }
-
- .owl-carousel .owl-dot,
- .owl-carousel .owl-nav .owl-next,
- .owl-carousel .owl-nav .owl-prev {
-     cursor: pointer;
-     -webkit-user-select: none;
-     -khtml-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none
- }
-
- .owl-carousel .owl-nav button.owl-next,
- .owl-carousel .owl-nav button.owl-prev,
- .owl-carousel button.owl-dot {
-     background: 0 0;
-     color: inherit;
-     border: none;
-     padding: 0!important;
-     font: inherit
- }
-
- /* .owl-carousel.owl-loading {
-     opacity: 0;
-     display: block
- } */
-
- .owl-carousel.owl-hidden {
-     opacity: 0
- }
-
- .owl-carousel.owl-refresh .owl-item {
-     visibility: hidden
- }
-
- .owl-carousel.owl-drag .owl-item {
-     -ms-touch-action: none;
-     touch-action: none;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none
- }
-
- .owl-carousel.owl-grab {
-     cursor: move;
-     cursor: grab
- }
-
- .owl-carousel.owl-rtl {
-     direction: rtl
- }
-
- .owl-carousel.owl-rtl .owl-item {
-     float: right
- }
-
- .owl-carousel .animated {
-     animation-duration: 1s;
-     animation-fill-mode: both
- }
-
- .owl-carousel .owl-animated-in {
-     z-index: 0
- }
-
- .owl-carousel .owl-animated-out {
-     z-index: 1
- }
-
- .owl-carousel .fadeOut {
-     animation-name: fadeOut
- }
-
- @keyframes fadeOut {
-     0% {
-         opacity: 1
-     }
-     100% {
-         opacity: 0
-     }
- }
-
- .owl-height {
-     transition: height .5s ease-in-out
- }
-
- .owl-carousel .owl-item .owl-lazy {
-     opacity: 0;
-     transition: opacity .4s ease
- }
+.carouselTicker_vertical .carou1selTicker__item{
+    margin: 0 0 5px 0;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
 
 
+#carouselTicker .carouselTicker__item {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.carouselTicker__item img {
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
 
-
- .owl-carousel .owl-video-tn {
-     opacity: 0;
-     height: 100%;
-     background-position: center center;
-     background-repeat: no-repeat;
-     background-size: contain;
-     transition: opacity .4s ease
- }
-
- .owl-carousel .owl-video-frame {
-     position: relative;
-     z-index: 1;
-     height: 100%;
-     width: 100%
- }
 
 
 footer {

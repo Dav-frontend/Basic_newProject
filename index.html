@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="media.css/device_media.css">
     <script src="JavaScript2/jquery.min.js"></script>
-   
-   
-   
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
@@ -70,7 +67,7 @@
 
                                <!--Become a developer-->
 
-       <section id="OurCurses" class="container_consolidation" >
+       <section id="OurCurses" container_consolidation section-wrap page about>
           <section class="child_section">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
@@ -567,6 +564,7 @@
        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
        <script src="js/jquery.carouselTicker.min.js"></script>
     <script>
+        
             //Fullscreen-Vertical-Page-Carousel
   var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -578,6 +576,15 @@ _gaq.push(['_trackPageview']);
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
+        
+               
+    function mouseScroll(id){
+        var offset = 0;
+        $('html,body').animate({
+          scrollTop: $(id).offset ().top - offset
+        },1000)
+        return false
+    }
 
     </script>
 </body>

@@ -41,10 +41,15 @@ video[loop] {
   bottom: 0;
   right: 0;
   z-index: -1999;
+  -webkit-filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13);
   filter: blur(1px) brightness(1.11) contrast(0.98) invert(0.13);
 }
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   position: fixed;
   width: 100%;
@@ -62,6 +67,8 @@ header > a img {
   margin-top: 1%;
 }
 #fixedBar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #fixedBar > ul li:first-of-type {
@@ -101,6 +108,7 @@ header > a img {
 .icon-scroll {
   width: 33px;
   height: 57px;
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
   box-shadow: inset 0 0 0 3px #fff;
   border-radius: 25px;
   cursor: pointer;
@@ -113,8 +121,11 @@ header > a img {
   margin-left: -2px;
   top: 6px;
   border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
   animation-name: scroll;
 }
 @-webkit-keyframes scroll {
@@ -141,8 +152,14 @@ header > a img {
  *animated-headline We teach Programing*/
 #type_writer {
   height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
 }
@@ -219,16 +236,29 @@ header > a img {
   }
 }
 #OurCurses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #eeeeee;
   height: 100vh;
   min-height: 650px;
 }
 #OurCurses > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #OurCurses > section > h2 {
@@ -240,7 +270,12 @@ header > a img {
 #OurCurses > section > article {
   width: 100%;
   height: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 30px;
 }
@@ -301,6 +336,8 @@ header > a img {
   margin-top: 1%;
 }
 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 50px;
   margin-left: -110%;
@@ -324,23 +361,40 @@ header > a img {
 .letter {
   display: inline-block;
   position: relative;
+  -webkit-transform: translateZ(25px);
   transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
   transform-origin: 50% 50% 25px;
 }
 .letter.out {
+  -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .letter.behind {
+  -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
 .letter.in {
+  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #implementedProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 650px;
 }
@@ -353,6 +407,8 @@ header > a img {
   display: block;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .vertical-carousel-box,
@@ -422,6 +478,7 @@ header > a img {
   height: 60%;
   width: 45%;
   font-family: sans-serif;
+  -webkit-transition-duration: 0.50s;
   transition-duration: 0.50s;
   padding: 0;
   margin: 0;
@@ -432,6 +489,7 @@ header > a img {
   cursor: pointer;
   padding: 14px 0px 14px 0px;
   color: #fff;
+  -webkit-transition-duration: 0.50s;
   transition-duration: 0.50s;
 }
 .vertical-carousel-indicators li.active {
@@ -442,10 +500,10 @@ header > a img {
 }
 .vertical-carousel-box {
   -webkit-transition: transform 500ms;
-  -moz-transition: transform 500ms;
-  -ms-transition: transform 500ms;
-  -o-transition: transform 500ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
   transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 #myVerticalCarousel {
   height: 100%;
@@ -455,8 +513,14 @@ header > a img {
   text-align: center;
 }
 #needHelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: relative;
   background-color: #eeeeee;
@@ -560,8 +624,15 @@ header > a img {
   >>>
 */
 #mouse-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: -1.5%;
 }
@@ -569,7 +640,6 @@ header > a img {
   display: block;
   width: 8px;
   height: 8px;
-  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   border-right: 2px solid #fff;
@@ -604,13 +674,11 @@ header > a img {
   0% {
     opacity: 1;
     -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   100% {
     opacity: 0;
     -webkit-transform: translateY(6px);
-    -ms-transform: translateY(6px);
     transform: translateY(6px);
   }
 }
@@ -639,12 +707,22 @@ header > a img {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .container_consolidation.coment_student {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 700px;
 }
@@ -844,8 +922,14 @@ time {
   opacity: 1;
 }
 #subsCribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   min-height: 650px;
 }
@@ -861,8 +945,14 @@ time {
   width: 100%;
   height: 32.5%;
   margin-top: 3.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   border-radius: 10px;
@@ -907,9 +997,18 @@ time {
 }
 /*    input area    */
 #userContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 #userContact > input {
@@ -961,6 +1060,7 @@ time {
   font-size: 80%;
   background-color: #3b5998;
   position: relative;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 10px;
   text-align: center;
@@ -985,6 +1085,7 @@ time {
   color: #fff;
   padding: 0.6rem 0.6rem 1rem 0.9rem;
   background-color: #324d86;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-size: 150%;
 }
@@ -998,9 +1099,18 @@ time {
   min-height: 280px;
   background-color: #ffffff;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #partner > h2 {
@@ -1012,8 +1122,15 @@ time {
 #partner section {
   width: 57%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 90%;
 }
@@ -1025,10 +1142,12 @@ time {
 }
 #main-content img {
   max-width: 95%;
+  -webkit-transition-duration: 0.20s;
   transition-duration: 0.20s;
 }
 #main-content img:hover {
   max-width: 100%;
+  -webkit-transition-duration: 0.20s;
   transition-duration: 0.20s;
 }
 /**
@@ -1070,19 +1189,40 @@ time {
 #carouselTicker .carouselTicker__item {
   width: 220px;
   height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .carouselTicker__item img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: #24282d;
   height: 50vh;
@@ -1101,9 +1241,18 @@ footer > section:nth-of-type(2) span {
 footer > section:nth-of-type(1) {
   width: 57%;
   height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 footer > section:nth-of-type(1) div {
@@ -1150,15 +1299,23 @@ footer > section:nth-of-type(1) form button {
   position: relative;
   top: 0.1em;
   width: 1em;
+  -webkit-animation: pulse 1s ease infinite;
   animation: pulse 1s ease infinite;
 }
+@-webkit-keyframes pulse {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
 @keyframes pulse {
+  -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
 50% {
+  -webkit-transform: scale3d(1.5, 1.5, 1.05);
   transform: scale3d(1.5, 1.5, 1.05);
 }
 100% {
+  -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
 /* Creating the heartbeat effect*/

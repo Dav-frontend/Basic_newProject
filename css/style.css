@@ -441,7 +441,7 @@ header > a img {
 .vertical-carousel-indicators li.active {
   padding-top: 33px;
   padding-bottom: 33px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #ffffff;
 }
 .vertical-carousel-box {
@@ -457,22 +457,6 @@ header > a img {
 }
 .item {
   text-align: center;
-}
-#a {
-  background: blue;
-}
-#b {
-  background: #656D77;
-}
-#c {
-  background: red;
-}
-#d {
-  background: black;
-}
-p {
-  color: #fff;
-  font-size: 3em;
 }
 #needHelp {
   display: flex;

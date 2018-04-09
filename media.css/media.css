@@ -171,9 +171,18 @@
   /*                    */
   /*style Header: Fixed menu Basic.icon +search+menu+person*/
   header > a img {
-    max-width: 5%;
     margin-left: 10%;
     margin-top: 5%;
+    width: 85%;
+  }
+  #fixedBar > ul {
+    display: flex;
+  }
+  #fixedBar > ul li > a img {
+    max-width: 80%;
+  }
+  #fixedBar > ul li:last-child > a img {
+    max-width: 53%;
   }
   #fixedBar > ul {
     display: flex;
@@ -367,6 +376,13 @@
   }
   #last {
     height: 60vh;
+    transition: 6s;
+  }
+  #last.container_consolidation {
+    min-height: 150px;
+  }
+  #partner {
+    height: 90vh;
   }
   footer {
     height: 10vh;

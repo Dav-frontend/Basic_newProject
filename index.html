@@ -4,7 +4,7 @@
     <title>Basic IT Center</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-30/306250363840_89eb824ebe5f9a3730f6_34.png" sizes="16x16">
+
     <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="media.css/media.css">
@@ -15,7 +15,7 @@
     <script src="js/wow.min.js"></script>
     <script src="svg-with-js/fontawesome-all.js"></script>
     <script src="JavaScript/Animated.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
       
     <script>new WOW().init();</script>
 </head>
@@ -24,14 +24,33 @@
      <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
        <span id="fixedBar">
            <ul>
-               <li><span onclick="x()">+374 11 65 99 88</span></li>
+               <li><span>+374 11 65 99 88</span></li>
                <li class="search"><a href=""><img src="img/logo/search%20copy%202.png" alt=""></a></li>
-               <li onclick="myFunction(this)" class="icon_container">
-            
+               <li>
+                    <div class="container" id="trigger-overlay" onclick="myFunction(this)">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
                </li>
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
        </span>
+       
+       		<div class="overlay overlay-door">
+
+			<!-- <p><button id="trigger-overlay" type="button">Open Overlay</button></p> -->
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
    </header>
    
     <video class="backgroundColor" autoplay loop muted preload="auto">
@@ -555,14 +574,14 @@
               </section>
             </footer>
        </section>
-    
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src="js/jquery.carouselTicker.min.js"></script>
        <script src="JavaScript/index.js"></script>
-       <script src="js/modernizr.js"></script>
        <script src="js/main.js"></script>
        <script src="js/basic.js"></script>
        <script src="js/vertical_carousal.js"></script>
-       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-       <script src="js/jquery.carouselTicker.min.js"></script>
+      
+       
     <script>
         
             //Fullscreen-Vertical-Page-Carousel
@@ -585,7 +604,9 @@ _gaq.push(['_trackPageview']);
         },1000)
         return false
     }
-
+		function myFunction(x) {
+	x.classList.toggle("change");
+}
     </script>
 </body>
 </html>

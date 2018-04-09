@@ -20,7 +20,7 @@
 </head>
 <body>
    <header id="scrollsdown">
-     <a href=""><img src="img/logo/Layer%201%20copy%205_basic_logo.png" alt=""></a>
+     <a href=""><img id="logoBasic" src="img/logo/logoBasic1.png" alt="logo"></a>
        <span id="fixedBar">
            <ul>
                <li><span>+374 11 65 99 88</span></li>
@@ -35,7 +35,7 @@
                <li><a href=""><img src="img/logo/person%201_%20white.png" alt=""></a></li>
            </ul>
        </span>
-       
+
        		<div class="overlay overlay-door">
 
 			<!-- <p><button id="trigger-overlay" type="button">Open Overlay</button></p> -->
@@ -51,13 +51,13 @@
 		</div>
 
    </header>
-   
+
     <video class="backgroundColor" autoplay loop muted preload="auto">
         <source src="video/Background.mp4">
     </video>
                        <!-- Background-Video-^-->
 
-    <section id="type_writer">
+    <section id="type_writer" class="container_consolidation">
         <!--text Anmation type writer-->
         <section class="cd-intro">
             <h1 class="cd-headline slide">
@@ -77,7 +77,7 @@
             <article class="mouse_pad">
                    <!--touch mobile-->
                 <a href="javascript://O" onclick="mouseScroll ('#OurCurses')"><img src="img/logo/mouse.png" alt=""></a>
-               
+
                 <a href="javascript://O" onclick="mouseScroll ('#OurCurses')" class='icon-scroll'></a>
                   <!---->
             </article>
@@ -85,7 +85,7 @@
 
                                <!--Become a developer-->
 
-       <section id="OurCurses" container_consolidation section-wrap page about>
+       <section id="OurCurses" class="container_consolidation section-wrap page about">
           <section class="child_section">
             <h2 class="wow jackInTheBox" data-wow-offset="40" data-wow-delay="1.5s">Our Courses</h2>
               <article class="wow bounceInRight" data-wow-delay="0.40s" >
@@ -133,7 +133,7 @@
           </section>
        </section>
 
-      
+
 <section class="container_consolidation" id="implementedProjects">
 
 <section class="child_section">
@@ -323,7 +323,7 @@
             <span class="down-arrow-2"></span>
             <span class="down-arrow-3"></span>
           </div>
-          
+
          </section>
 
          <section class="scrolle">
@@ -332,9 +332,9 @@
                 <li class="student1">
                   <div>
                     <time>Arpine</time>
-                     At vero eos et accusamus et iusto odio 
+                     At vero eos et accusamus et iusto odio
                      dignissimosducimusqui blanditiis praesentium
-                     At vero eos etaccusamus et iustoodio dignissimos 
+                     At vero eos etaccusamus et iustoodio dignissimos
                      ducimus qui blanditiis praesentium
                   </div>
                 </li>
@@ -573,7 +573,8 @@
               </section>
             </footer>
        </section>
-     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src="js/fixedBarScrolle.js"></script>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
        <script src="js/jquery.carouselTicker.min.js"></script>
        <script src="JavaScript/index.js"></script>
        <script src="js/main.js"></script>
@@ -581,12 +582,12 @@
        <script src="js/vertical_carousal.js"></script>
      <script src="menuScript.js/demo1.js"></script>
       <script src="menuScript.js/classie.js"></script>
-       
+
     <script>
-        
+
             //Fullscreen-Vertical-Page-Carousel
- 
-               
+
+
     function mouseScroll(id){
         var offset = 0;
         $('html,body').animate({

@@ -137,7 +137,9 @@ header > a img {
     transform: translateY(46px);
   }
 }
-/*menu icon*/
+#trigger-overlay {
+  cursor: pointer;
+}
 .change > .bar1 {
   transform: rotate(-45deg) translate(-4px, 3px);
   background-color: #fff;
@@ -149,10 +151,6 @@ header > a img {
   transform: rotate(45deg) translate(-8px, -8px);
   background-color: #fff;
 }
-#trigger-overlay {
-  z-index: 9999;
-  cursor: pointer;
-}
 .bar1,
 .bar2,
 .bar3 {
@@ -162,6 +160,7 @@ header > a img {
   margin: 6px 0;
   transition: 0.4s;
 }
+/* Overlay style */
 .overlay {
   position: fixed;
   width: 100%;
@@ -178,10 +177,10 @@ header > a img {
   top: 20px;
   overflow: hidden;
   border: none;
+  background: url(../img/cross.png) no-repeat center center;
   text-indent: 200%;
   color: transparent;
   outline: none;
-  z-index: 100;
 }
 .overlay > nav {
   text-align: center;
@@ -201,36 +200,43 @@ header > a img {
 .overlay > ul > li {
   display: block;
   height: 20%;
-  height: calc(20%);
+  height: calc(100%/5);
   min-height: 54px;
   backface-visibility: hidden;
 }
 .overlay > ul > li > a {
   font-size: 2rem;
+  font-weight: 300;
   display: block;
   color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-  font-family: sans-serif;
-  font-weight: 100;
-  text-decoration: none;
+}
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #f0f0f0;
 }
 /* Effects */
 .overlay-door {
   visibility: hidden;
   width: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
   transition: width 0.5s 0.3s, visibility 0s 0.8s;
 }
-.overlay-door > .open {
+.overlay-door.open {
   visibility: visible;
   width: 101%;
+  -webkit-transition: width 0.5s;
   transition: width 0.5s;
+  z-index: -1;
 }
-.overlay-door > nav {
+.overlay-door nav {
   position: absolute;
   left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
 }
 .overlay-door nav,
@@ -249,6 +255,15 @@ header > a img {
 .overlay-door.close .overlay-close {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
 }
 /*
  *animated-headline We teach Programing*/

@@ -88,7 +88,10 @@ video[loop] {
   margin-left: 30px;
 }
 #fixedBar > ul li > a img {
-  max-width: 100%;
+  max-width: 80%;
+}
+#fixedBar > ul li:last-child > a img {
+  max-width: 53%;
 }
 .content {
   min-width: 638px;

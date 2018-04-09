@@ -31,6 +31,7 @@ h1 ,h2 ,h3,h4,a,li,p,span,button {
 .container_consolidation{
     height: 100vh;
     width: 100%;
+    min-height: 640px;
 } //Parent Element Width end Height
 video[loop]{
     min-width: 100%;
@@ -45,18 +46,24 @@ video[loop]{
 }   //background-vido
 
 //---------- section1 {header}
-header{
+#scrollsdown{
   display: flex;
-  justify-content: space-between;
   position: fixed;
+  justify-content: space-between;
   width: 100%;
   z-index: 1999;
 }
-
-header>a{
+#scrollsdown.active{
+  -webkit-transition: 2s; /* Safari */
+   transition: 2s;
+   background-color: rgba(129,141, 162, 0.11);
+}
+#scrollsdown.remove{
+  display: none;
+}
+#scrollsdown>a{
     margin-left: 2%;
     margin-top: 2%;
-
     img{
      max-width: 100%;
     }
@@ -375,7 +382,6 @@ min-height: 34px;
     align-items: center;
     background-color:@bg-color_white;
     height: 100vh;
-    min-height: 650px;
     >section{
         display: flex;
         flex-direction: column;
@@ -507,7 +513,6 @@ min-height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 650px;
       >section{
         width: 78%;
         height: 89.3%;
@@ -654,7 +659,6 @@ min-height: 34px;
     align-items: center;
     position: relative;
     background-color:@bg-color_white;
-    min-height: 630px;
     section{
         background-image: url(../img/programing/logoBasick.png);
         background-repeat: no-repeat;
@@ -862,7 +866,6 @@ min-height: 34px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 700px;
 }
 .intro {
   padding: 100px 0;
@@ -1083,7 +1086,6 @@ time {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 650px;
     >section{
         >h2{
             text-align: center;
@@ -1255,7 +1257,7 @@ time {
 
 //cooperating companies Section6  50/50
 #partner{
-    min-height: 280px;
+
   >h2{
     font-family: @font-family;
     font-size: 1.5rem;
@@ -1263,7 +1265,7 @@ time {
     padding-bottom: 3%;
   }
   background-color: #ffffff;
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1358,7 +1360,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #24282d;
-  height:50vh;
+  height:50%;
   color:#ffffff;
   li{
     font-size: 1.5vw;

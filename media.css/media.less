@@ -25,14 +25,15 @@
         /*style Header: text Animation*/
     header > a img {
       max-width: 90%;
-      margin-left: 12%
+      margin-left: 10%;
+      margin-top: 5%;
     }
 
     #fixedBar > ul li:first-of-type{
         font-size: 1.2em;
     }
     #fixedBar > ul li > a img {
-      max-width: 92%;
+      max-width: 84%;
     }
     .text{
         >p{
@@ -224,13 +225,23 @@ height: 70px;
                   }
               /*                    */
 
-/*style Header: text Animation*/
-    header>a{
-        width: 20%;
-        >nav>ul>li{
-            width: 15%
-        }
-    }
+/*style Header: Fixed menu Basic.icon +search+menu+person*/
+
+  header > a img {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 85%;
+  }
+  #fixedBar>ul{
+      display: flex;
+    
+      li > a img{
+          max-width: 80%;
+      }
+      li:last-child > a img{
+          max-width: 53%;
+      }
+  }
     #fixedBar{
         >ul{
             display: flex;
@@ -460,10 +471,6 @@ height: 70px;
 
 }//.
 @media only screen and (min-width:320px) and (max-width:768px){
-  // section2 Our Curses
-      header > a img{
-        max-width: 81px
-    }
     .mouse_pad > a:first-child{
     position: absolute;
     bottom: 0;
@@ -477,7 +484,7 @@ height: 70px;
     display: none;
 }
     //menu icon style icon
-   
+
   #OurCurses{
       min-height: 740px;
       >section{

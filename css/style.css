@@ -167,7 +167,7 @@ header > a img {
   height: 100%;
   top: 0;
   left: 0;
-  background: black;
+  background: #000000db;
 }
 .overlay > .overlay-close {
   width: 80px;
@@ -204,13 +204,13 @@ header > a img {
   min-height: 54px;
   backface-visibility: hidden;
 }
-.overlay > ul > li > a {
+.overlay ul li a {
   font-size: 2rem;
   font-weight: 300;
   display: block;
   color: #fff;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  transition: color 0.10s;
+  margin-top: 20px;
 }
 .overlay ul li a:hover,
 .overlay ul li a:focus {
@@ -255,15 +255,6 @@ header > a img {
 .overlay-door.close .overlay-close {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-}
-@media screen and (max-height: 30.5em) {
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-  }
-  .overlay ul li {
-    min-height: 34px;
-  }
 }
 /*
  *animated-headline We teach Programing*/

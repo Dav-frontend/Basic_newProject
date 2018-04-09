@@ -29,8 +29,8 @@ $(window).on('scroll', function() {
               }
 
         }else if(perc >= 13.7 && perc < 27.8){
-          topBar.classList.remove("remove");
-          topBar.classList.add("active");
+              topBar.classList.remove("remove");
+              topBar.classList.add("active");
               logo.src = 'img/logo/logoBasic2.png';
               logoSearch.src = 'img/logo/search copy 4.png';
               logoPerson.src = 'img/logo/person 2_ white.png';
@@ -65,6 +65,7 @@ $(window).on('scroll', function() {
           for (var i = 0; i < logoMenu.length; i++) {
               logoMenu[i].style.backgroundColor = "#e7e8ea";
           }
+          
         }else if(perc >= 71 ){
           topBar.classList.add("remove");
         }

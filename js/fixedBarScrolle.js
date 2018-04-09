@@ -11,9 +11,7 @@ $(window).on('scroll', function() {
         var logoPerson = document.getElementById("logoPerson")
         var logoSearch = document.getElementById('logoSearch')
         var phoneNumber = document.getElementById('phoneNumber')
-        var logoMenu1 = document.querySelector('.bar1');
-        var logoMenu2 = document.querySelector('.bar2');
-        var logoMenu3 = document.querySelector('.bar3')
+        var logoMenu = document.querySelectorAll('.bar1 , .bar2 , .bar3');
         // Your percentage is contained in perc variable
 
         console.log('The percentage is '+perc);
@@ -26,9 +24,10 @@ $(window).on('scroll', function() {
               logoSearch.src = 'img/logo/search copy 2.png';
               logoPerson.src = 'img/logo/person 1_ white.png';
               phoneNumber.style.color = '#e7e8ea';
-              logoMenu1.style.backgroundColor = '#e7e8ea';
-              logoMenu2.style.backgroundColor = '#e7e8ea';
-              logoMenu3.style.backgroundColor = '#e7e8ea'
+              for (var i = 0; i < logoMenu.length; i++) {
+                  logoMenu[i].style.backgroundColor = "#e7e8ea";
+              }
+
         }else if(perc >= 13.7 && perc < 27.8){
           topBar.classList.remove("remove");
           topBar.classList.add("active");
@@ -36,36 +35,36 @@ $(window).on('scroll', function() {
               logoSearch.src = 'img/logo/search copy 4.png';
               logoPerson.src = 'img/logo/person 2_ white.png';
               phoneNumber.style.color = 'black';
-              logoMenu1.style.backgroundColor = 'black';
-              logoMenu2.style.backgroundColor = 'black';
-              logoMenu3.style.backgroundColor = 'black';
+              for (var i = 0; i < logoMenu.length; i++) {
+                  logoMenu[i].style.backgroundColor = "black";
+              }
         }else if(perc >= 27.8 && perc < 42){
           topBar.classList.remove("remove");
           logo.src = 'img/logo/logoBasic1.png';
           logoSearch.src = 'img/logo/search copy 2.png';
           logoPerson.src = 'img/logo/person 1_ white.png';
           phoneNumber.style.color = '#e7e8ea';
-          logoMenu1.style.backgroundColor = '#e7e8ea';
-          logoMenu2.style.backgroundColor = '#e7e8ea';
-          logoMenu3.style.backgroundColor = '#e7e8ea'
+          for (var i = 0; i < logoMenu.length; i++) {
+              logoMenu[i].style.backgroundColor = "#e7e8ea";
+          }
         }else if(perc >= 42 && perc < 56){
           topBar.classList.remove("remove");
           logo.src = 'img/logo/logoBasic2.png';
           logoSearch.src = 'img/logo/search copy 4.png';
           logoPerson.src = 'img/logo/person 2_ white.png';
           phoneNumber.style.color = 'black';
-          logoMenu1.style.backgroundColor = 'black';
-          logoMenu2.style.backgroundColor = 'black';
-          logoMenu3.style.backgroundColor = 'black';
+          for (var i = 0; i < logoMenu.length; i++) {
+              logoMenu[i].style.backgroundColor = "black";
+          }
         }else if(perc >= 56 && perc < 71){
           topBar.classList.remove("remove");
           logo.src = 'img/logo/logoBasic1.png';
           logoSearch.src = 'img/logo/search copy 2.png';
           logoPerson.src = 'img/logo/person 1_ white.png';
           phoneNumber.style.color = '#e7e8ea';
-          logoMenu1.style.backgroundColor = '#e7e8ea';
-          logoMenu2.style.backgroundColor = '#e7e8ea';
-          logoMenu3.style.backgroundColor = '#e7e8ea'
+          for (var i = 0; i < logoMenu.length; i++) {
+              logoMenu[i].style.backgroundColor = "#e7e8ea";
+          }
         }else if(perc >= 71 ){
           topBar.classList.add("remove");
         }

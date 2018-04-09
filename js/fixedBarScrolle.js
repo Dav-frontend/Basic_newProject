@@ -33,5 +33,4 @@ $(window).on('scroll', function() {
         }else if(perc >= 71 ){
           topBar.classList.add("remove");
         }
-
         });

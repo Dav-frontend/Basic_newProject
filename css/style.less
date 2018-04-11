@@ -48,7 +48,9 @@ video[loop]{
 //---------- section1 {header}
 #scrollsdown{
   display: flex;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   width: 100%;
   z-index: 1999;
@@ -57,10 +59,11 @@ video[loop]{
   -webkit-transition: 2s; /* Safari */
    transition: 2s;
    background-color: rgba(129,141, 162, 0.11);
+   transform: translateY(-100%);
+   transition-duration: 0.50s;
 }
 #scrollsdown.remove{
-  transform: translateY(-100%);
-  transition-duration: 0.50s;
+
 }
 #scrollsdown>a{
     margin-left: 1.8%;

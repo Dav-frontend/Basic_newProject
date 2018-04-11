@@ -46,7 +46,7 @@ video[loop]{
 }   //background-vido
 
 //---------- section1 {header}
-#scrollsdown{
+#scrollsDown{
   display: flex;
   position: absolute;
   top: 0;
@@ -54,20 +54,22 @@ video[loop]{
   justify-content: space-between;
   width: 100%;
   z-index: 1999;
-}
-#scrollsdown.active{
-  -webkit-transition: 2s; /* Safari */
-   transition: 2s;
-   background-color: rgba(129,141, 162, 0.11);
-   transform: translateY(-100%);
-   transition-duration: 0.50s;
-}
-#scrollsdown.remove{
 
 }
-#scrollsdown>a{
+#scrollsDown.active{
+   background-color: rgba(10,10, 10, 0.73);
+   position: fixed;
+   animation-name: example;
+    animation-duration: 2s;
+   align-items: center;
+}
+@keyframes example {
+    from {height:0px;}
+    to {height:77px;}
+}
+#scrollsDown>a{
     margin-left: 1.8%;
-    margin-top: 1.8%;
+    margin-top: 0.8%;
     img{
      max-width: 90%;
     }
